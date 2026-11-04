@@ -1,6 +1,6 @@
 # 能力编写手册
 
-本仓库是 Vetta 桌面端「开放能力市场」的官方源。源码在 `main` 开发，由 CI 向 gh-pages 发布 schema v3 索引、向 GitHub Releases 发布固定 .vettapkg。Desktop 读取 `gh-pages`。
+本仓库是 Youth 桌面端「开放能力市场」的官方源。源码在 `main` 开发，由 CI 向 gh-pages 发布 schema v3 索引、向 GitHub Releases 发布固定 .vettapkg。Desktop 读取 `gh-pages`。
 
 这份手册面向在本仓库中添加/修改能力的人与 AI。源码检查、发布检查与客户端校验分别保护不同边界；来源同步失败时查看主进程中的 open-marketplace 日志。
 
@@ -96,18 +96,18 @@ abilities/<type>/<slug>/assets/
 ```json
 {
   "type": "skill",
-  "slug": "hello-vetta",
-  "name": "Hello Vetta",
+  "slug": "hello-youth",
+  "name": "Hello Youth",
   "description": "一句话说明这个能力做什么。",
   "version": "1.0.0",
   "configVersion": 1,
   "license": "MIT",
-  "author": "Vetta",
+  "author": "Youth",
   "category": "Examples",
   "categoryI18n": { "zh": "示例", "en": "Examples" },
   "tags": ["example"],
   "detail": { "i18n": { "zh": { "name": "…", "description": "…" } } },
-  "source": { "path": "abilities/skills/hello-vetta" }
+  "source": { "path": "abilities/skills/hello-youth" }
 }
 ```
 
@@ -129,7 +129,7 @@ abilities/<type>/<slug>/assets/
 
 ```markdown
 ---
-name: hello-vetta        # 必须 === 条目的 slug
+name: hello-youth        # 必须 === 条目的 slug
 description: …           # 必填，非空
 version: 1.0.0           # 必须 === 条目的 version
 ---
@@ -283,7 +283,7 @@ bundle 只是一个可勾选安装的集合，自己没有可执行内容：
   "slug": "starter",
   "config": {
     "members": [
-      { "type": "skill", "slug": "hello-vetta", "source": { "path": "abilities/skills/hello-vetta" } },
+      { "type": "skill", "slug": "hello-youth", "source": { "path": "abilities/skills/hello-youth" } },
       { "type": "mcp", "slug": "context7", "source": { "path": "abilities/mcp/context7" } }
     ]
   }
@@ -306,12 +306,12 @@ bundle 只是一个可勾选安装的集合，自己没有可执行内容：
 
 ## 展示层：`ability.json` / `detail.json`
 
-### 面向 Vetta 用户编写
+### 面向 Youth 用户编写
 
-- 详情是 Vetta 中的产品介绍，不是上游官网、工具目录或开发者 README 的复制品。先说用户能得到什么，
+- 详情是 Youth 中的产品介绍，不是上游官网、工具目录或开发者 README 的复制品。先说用户能得到什么，
   再给一个可直接在对话中使用的例子，最后用简短步骤说明安装、必要配置与开始使用。
 - 复用宿主的声明式详情区块；常见结构为用途介绍、对话示例、使用场景、开始步骤及必要提醒。
-  步骤描述用户在 Vetta 中的操作，不把工具调用、环境变量或内部存储流程写成用户操作。
+  步骤描述用户在 Youth 中的操作，不把工具调用、环境变量或内部存储流程写成用户操作。
 - 命令、固定版本、协议和高级排查留在独立技术文档，通过帮助链接按需访问；不要把技术 README 设为详情的静默 fallback。
 - 简化不能变成虚假承诺：尚需用户安装的依赖、提供的凭据、费用/额度及重要权限边界，应在开始使用前简明告知，
   不宣称尚未实现的自动安装或免配置。示例回复用于说明预期流程，不冒充实际查询结果。
@@ -329,7 +329,7 @@ bundle 只是一个可勾选安装的集合，自己没有可执行内容：
 {
   "schemaVersion": 1,
   "type": "skill",
-  "slug": "hello-vetta",
+  "slug": "hello-youth",
   "version": "1.0.0",
   "icon": "solar:magic-stick-3-bold",
   "detail": {

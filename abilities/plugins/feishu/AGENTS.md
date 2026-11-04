@@ -1,6 +1,6 @@
 # 飞书
 
-Vetta 桌面插件工程。**先读手册再写代码**——不要凭记忆写 SDK API，这套合同变化很快。
+Youth 桌面插件工程。**先读手册再写代码**——不要凭记忆写 SDK API，这套合同变化很快。
 
 ## 第一步：装依赖，然后找到手册
 
@@ -43,7 +43,7 @@ CLI），**两者冲突时以它为准**。
 ```bash
 npm run dev            # Vite + Module Federation 开发服务器
 npm run build          # 产出 dist/
-npm run install:vetta  # 打包并装进正在运行的 Vetta（需要 Vetta 已启动）
+npm run install:vetta  # 打包并装进正在运行的 Youth（需要 Youth 已启动）
 npx vetta-plugin-cli watch   # 开热更新：宿主改从本工程目录加载，改完即生效
 npx vetta-plugin-cli uninstall  # 卸载（省略 id 即本工程对应的插件）
 ```
