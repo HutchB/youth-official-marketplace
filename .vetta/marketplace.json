@@ -733,7 +733,7 @@
       "slug": "build-apple-apps",
       "name": "Build Apple Apps",
       "description": "Bring a live iOS Simulator into the activity panel so the AI can build, install and launch your app while you watch and use it, with a built-in SwiftUI development guide.",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",
@@ -789,6 +789,29 @@
           "artifact": {
             "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-build-apple-apps/build-apple-apps-0.3.2.vettapkg",
             "sha256": "1f2f845789f53097bf48a96bd6aaaeaab2b8894361e0e26f0af9bccf02f9ff73"
+          }
+        },
+        {
+          "version": "0.3.3",
+          "minAppVersion": "0.5.60",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.activity-tab",
+            "ui.slot.workspace-view",
+            "agent.command.spawn",
+            "agent.skills.control",
+            "agent.session.read",
+            "fs.read",
+            "storage.read",
+            "storage.write",
+            "shell.openExternal"
+          ],
+          "commands": [
+            "npx"
+          ],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-build-apple-apps/build-apple-apps-0.3.3.vettapkg",
+            "sha256": "ddb693cb8713dc8355b126013b22a6054e84247c605aacc3195cdf38ecb6f861"
           }
         }
       ]
@@ -867,5 +890,5 @@
       ]
     }
   ],
-  "marketplaceVersion": "2026.11.04-2"
+  "marketplaceVersion": "2026.11.04-3"
 }
