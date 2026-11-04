@@ -53,7 +53,7 @@
     },
     {
       "type": "markdown",
-      "content": "## 隐私说明\n\nVetta 通过 HTTPS 直连 Notion 官方托管的 MCP 服务。授权凭证只保存在本机，不会上传到 Youth 服务器；只有在对话使用该连接器时才会访问 Notion 数据。"
+      "content": "## 隐私说明\n\nYouth 通过 HTTPS 直连 Notion 官方托管的 MCP 服务。授权凭证只保存在本机，不会上传到 Youth 服务器；只有在对话使用该连接器时才会访问 Notion 数据。"
     }
   ]
 }

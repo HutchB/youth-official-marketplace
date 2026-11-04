@@ -709,3 +709,48 @@ test("REA refuses to repackage upstream and keeps the conversation as its only s
     assert.doesNotMatch(text, /README/iu);
   }
 });
+
+test("display content carries no Vetta brand remnants in any language", () => {
+  const collectStrings = (value, out = []) => {
+    if (typeof value === "string") out.push(value);
+    else if (Array.isArray(value)) for (const item of value) collectStrings(item, out);
+    else if (value && typeof value === "object") for (const item of Object.values(value)) collectStrings(item, out);
+    return out;
+  };
+  const displayFiles = new Set();
+  const addDetail = (directory) => {
+    const descriptor = readJson(resolve(directory, "ability.json"));
+    displayFiles.add(resolve(directory, "ability.json"));
+    if (descriptor.detail?.path) displayFiles.add(resolve(directory, descriptor.detail.path));
+    for (const locale of Object.values(descriptor.detail?.i18n ?? {})) {
+      if (locale.path) displayFiles.add(resolve(directory, locale.path));
+    }
+  };
+  for (const ability of catalog.abilities) {
+    const directory = resolve(root, ability.source.path);
+    addDetail(directory);
+    if (ability.type === "plugin") {
+      const locales = resolve(directory, "locales");
+      if (existsSync(locales)) {
+        for (const name of readdirSync(locales)) displayFiles.add(resolve(locales, name));
+      }
+    }
+    if (ability.type === "skill") {
+      displayFiles.add(resolve(directory, "SKILL.md"));
+    }
+    for (const member of ability.config?.members ?? []) {
+      if (member.source) addDetail(resolve(root, member.source.path));
+    }
+  }
+  const offenders = [];
+  for (const file of displayFiles) {
+    const raw = readFileSync(file, "utf8");
+    const texts = /\.json$/.test(file) ? collectStrings(JSON.parse(raw)) : [raw];
+    for (const text of texts) {
+      if (/\bVetta\b/.test(text) || /VETTA(?!_)/.test(text)) {
+        offenders.push(`${relative(root, file).split(sep).join("/")}: ${text.slice(0, 80)}`);
+      }
+    }
+  }
+  assert.deepEqual(offenders, []);
+});

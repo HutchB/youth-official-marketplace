@@ -53,7 +53,7 @@
     },
     {
       "type": "markdown",
-      "content": "## Privacy\n\nVetta connects directly to Notion's hosted MCP endpoint over HTTPS. Authorization credentials stay on this device and are not uploaded to Youth's servers. Notion data is accessed only when a conversation uses the connector."
+      "content": "## Privacy\n\nYouth connects directly to Notion's hosted MCP endpoint over HTTPS. Authorization credentials stay on this device and are not uploaded to Youth's servers. Notion data is accessed only when a conversation uses the connector."
     }
   ]
 }

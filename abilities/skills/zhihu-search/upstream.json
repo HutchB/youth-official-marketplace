@@ -7,10 +7,10 @@
     "LICENSE": "LICENSE"
   },
   "adaptations": [
-    "Add Vetta-required version frontmatter and pin CLI examples to PyPI 2.0.0.",
-    "Use the Vetta companion server identity zhihu-search-mcp.",
+    "Add Youth-required version frontmatter and pin CLI examples to PyPI 2.0.0.",
+    "Use the Youth companion server identity zhihu-search-mcp.",
     "Separate MCP credentials from standalone CLI credentials; do not bypass a disabled companion.",
-    "Replace client-specific setup instructions with Vetta setup and add bilingual presentation files.",
+    "Replace client-specific setup instructions with Youth setup and add bilingual presentation files.",
     "Do not copy client-specific agents/openai.yaml or modify upstream Python source."
   ],
   "runtime": {
