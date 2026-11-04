@@ -58,7 +58,7 @@ export async function publishMarketplace({ root, directory, gh = (...args) => ex
     assertExistingRelease(item, readFileSync(archive));
     let release = releaseByTag(gh, repository, item.tag);
     if (!release) {
-      gh('release', 'create', item.tag, archive, '--repo', repository, '--draft', '--target', publication.sourceSha, '--title', `${item.slug} plugin packages`, '--notes', `Append-only Vetta plugin packages for ${item.slug}. The first package was built from ${publication.sourceSha}; version metadata and SHA-256 digests are recorded in the gh-pages marketplace index.`);
+      gh('release', 'create', item.tag, archive, '--repo', repository, '--draft', '--target', publication.sourceSha, '--title', `${item.slug} plugin packages`, '--notes', `Append-only Youth plugin packages for ${item.slug}. The first package was built from ${publication.sourceSha}; version metadata and SHA-256 digests are recorded in the gh-pages marketplace index.`);
       release = releaseByTag(gh, repository, item.tag);
       if (!release) throw new Error(`Created draft release is unavailable: ${item.tag}`);
     }

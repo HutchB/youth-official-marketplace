@@ -1,27 +1,27 @@
-# Vetta setup and diagnostics
+# Youth setup and diagnostics
 
 Read this only for setup, credentials or diagnostics. For ordinary research, follow `SKILL.md`.
 
-## Install through Vetta
+## Install through Youth
 
 Choose Zhihu Research in the ability marketplace, then select the guide, the search connection,
 or both. Do not install a second global Skill or register another server through another client.
 This guide alone does not install a runtime or an MCP server.
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) if `uvx` is missing, and
-restart Vetta after a PATH change. Python 3.10+ is required; uv can download a compatible Python
+restart Youth after a PATH change. Python 3.10+ is required; uv can download a compatible Python
 under its normal policy. First use downloads the pinned package and dependencies. No Node.js
-is needed for this Vetta package.
+is needed for this Youth package.
 
 ## Companion MCP credentials
 
-Create an Access Secret at https://developer.zhihu.com/ and enter it in Vetta's protected MCP
-parameter dialog. Vetta passes `ZHIHU_ACCESS_SECRET` only to the companion server process.
-These credentials are not shared with standalone CLI commands. Never inspect Vetta configuration
+Create an Access Secret at https://developer.zhihu.com/ and enter it in Youth's protected MCP
+parameter dialog. Youth passes `ZHIHU_ACCESS_SECRET` only to the companion server process.
+These credentials are not shared with standalone CLI commands. Never inspect Youth configuration
 to obtain them, export them into a shell, or ask the user to paste them into chat.
 
 Use the visible tools belonging to `zhihu-search-mcp`. If it is disabled, disconnected or awaiting
-configuration, ask the user to configure/enable that connection in Vetta; do not silently bypass
+configuration, ask the user to configure/enable that connection in Youth; do not silently bypass
 it with a CLI invocation. Do not auto-approve tools or create a duplicate MCP registration.
 
 ## Standalone guide credentials
@@ -29,7 +29,7 @@ it with a CLI invocation. Do not auto-approve tools or create a duplicate MCP re
 Only when the user chose standalone CLI use, let the user configure `ZHIHU_ACCESS_SECRET` in
 their own local environment or use the upstream local credential-storage mechanism in their
 own terminal. Do not put secrets in agent-generated commands, chat, source files or logs.
-Do not promise that the secret entered in Vetta is available in a separate shell.
+Do not promise that the secret entered in Youth is available in a separate shell.
 
 Non-business diagnostics:
 

@@ -21,7 +21,7 @@
           "icon": "solar:shield-check-bold"
         },
         {
-          "title": "Vetta 安全收集密钥",
+          "title": "Youth 安全收集密钥",
           "description": "Token 通过 secret 参数收集，并写入 MCP 请求头配置。",
           "icon": "solar:key-bold"
         }
@@ -37,7 +37,7 @@
         },
         {
           "title": "安装此 Ability",
-          "description": "Vetta 连接官方托管的 X MCP 端点，并通过受保护的输入框收集 Token。"
+          "description": "Youth 连接官方托管的 X MCP 端点，并通过受保护的输入框收集 Token。"
         },
         {
           "title": "搜索和查看 X 内容",
@@ -53,7 +53,7 @@
     },
     {
       "type": "markdown",
-      "content": "## 安全说明\n\n建议为 MCP 使用独立的 X 应用，并只授予必要权限。Vetta 只会通过 HTTPS 将 Bearer Token 发送到 `https://api.x.com/mcp`；不要把 Token 粘贴到提示词、源码或共享日志中。X API 的使用仍受 X 的速率限制和开发者条款约束。"
+      "content": "## 安全说明\n\n建议为 MCP 使用独立的 X 应用，并只授予必要权限。Youth 只会通过 HTTPS 将 Bearer Token 发送到 `https://api.x.com/mcp`；不要把 Token 粘贴到提示词、源码或共享日志中。X API 的使用仍受 X 的速率限制和开发者条款约束。"
     }
   ]
 }

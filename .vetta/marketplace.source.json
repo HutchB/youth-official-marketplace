@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "name": "vetta-official-marketplace",
-  "displayName": "Vetta Official Marketplace",
+  "displayName": "Youth Official Marketplace",
   "repository": "https://github.com/openvetta/vetta-official-marketplace",
   "minAppVersion": "0.5.59",
   "abilities": [
@@ -13,7 +13,7 @@
       "version": "1.0.4",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta / Lark Suite",
+      "author": "Youth / Lark Suite",
       "category": "Productivity",
       "categoryI18n": {
         "zh": "效率",
@@ -51,11 +51,11 @@
       "type": "plugin",
       "slug": "cli-proxy-api",
       "name": "CLIProxyAPI",
-      "description": "Run a managed local gateway for Gemini CLI, Codex, Claude, Antigravity, Kimi and xAI accounts, then use its models in Vetta.",
+      "description": "Run a managed local gateway for Gemini CLI, Codex, Claude, Antigravity, Kimi and xAI accounts, then use its models in Youth.",
       "version": "1.11.1",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta / Router For Me",
+      "author": "Youth / Router For Me",
       "category": "Development",
       "categoryI18n": {
         "zh": "开发",
@@ -73,7 +73,7 @@
         "i18n": {
           "zh": {
             "name": "CLIProxyAPI",
-            "description": "运行受管的本地模型网关，连接 Gemini CLI、Codex、Claude、Antigravity、Kimi 与 xAI 账号，并在 Vetta 中使用动态发现的模型。",
+            "description": "运行受管的本地模型网关，连接 Gemini CLI、Codex、Claude、Antigravity、Kimi 与 xAI 账号，并在 Youth 中使用动态发现的模型。",
             "tags": [
               "模型",
               "OAuth",
@@ -94,7 +94,7 @@
       "type": "mcp",
       "slug": "notion",
       "name": "Notion",
-      "description": "Connect a Notion workspace with browser authorization, then search, read, create and update pages directly from Vetta.",
+      "description": "Connect a Notion workspace with browser authorization, then search, read, create and update pages directly from Youth.",
       "version": "1.0.0",
       "configVersion": 1,
       "author": "Notion",
@@ -114,7 +114,7 @@
         "i18n": {
           "zh": {
             "name": "Notion",
-            "description": "通过浏览器授权连接 Notion 工作区，之后可直接让 Vetta 搜索、读取、新建和更新页面。",
+            "description": "通过浏览器授权连接 Notion 工作区，之后可直接让 Youth 搜索、读取、新建和更新页面。",
             "tags": [
               "Notion",
               "笔记",
@@ -133,10 +133,10 @@
       "type": "mcp",
       "slug": "baizhi-agent-toolkit",
       "name": "Baizhi Agent Toolkit",
-      "description": "Connect your Baizhi Cloud account to use the agent tools available to your key in Vetta, including web research and page extraction.",
+      "description": "Connect your Baizhi Cloud account to use the agent tools available to your key in Youth, including web research and page extraction.",
       "version": "1.0.1",
       "configVersion": 1,
-      "author": "Vetta / Baizhi Cloud / @ct-jaryn",
+      "author": "Youth / Baizhi Cloud / @ct-jaryn",
       "category": "Productivity",
       "categoryI18n": {
         "zh": "效率",
@@ -153,7 +153,7 @@
         "i18n": {
           "zh": {
             "name": "百智云 Agent Toolkit",
-            "description": "用自己的百智云账号在 Vetta 中使用该密钥可访问的 Agent 工具，包括网页搜索与页面提取。",
+            "description": "用自己的百智云账号在 Youth 中使用该密钥可访问的 Agent 工具，包括网页搜索与页面提取。",
             "tags": [
               "百智云",
               "Agent 工具",
@@ -172,11 +172,11 @@
       "type": "bundle",
       "slug": "shimo",
       "name": "Shimo",
-      "description": "An immersive bilingual reading workspace for books, poetry and study notes in Vetta, with Shimo reading Skills shipped inside the reader plugin.",
+      "description": "An immersive bilingual reading workspace for books, poetry and study notes in Youth, with Shimo reading Skills shipped inside the reader plugin.",
       "version": "1.0.0",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta",
+      "author": "Youth",
       "category": "Education",
       "categoryI18n": {
         "zh": "学习",
@@ -194,7 +194,7 @@
         "i18n": {
           "zh": {
             "name": "拾墨",
-            "description": "在 Vetta 中沉浸式阅读书籍与诗歌，划选内容即可提问、解析、标注拼音并保存阅读记录。",
+            "description": "在 Youth 中沉浸式阅读书籍与诗歌，划选内容即可提问、解析、标注拼音并保存阅读记录。",
             "tags": [
               "阅读",
               "诗歌",
@@ -238,7 +238,7 @@
       "version": "1.0.0",
       "configVersion": 1,
       "license": "Apache-2.0",
-      "author": "Cloudflare / Vetta",
+      "author": "Cloudflare / Youth",
       "category": "Development",
       "categoryI18n": {
         "zh": "开发",
@@ -255,7 +255,7 @@
         "i18n": {
           "zh": {
             "name": "Cloudflare 开发平台",
-            "description": "把官方平台知识、Wrangler 实践、Workers 审查、实时文档和可选账号授权组合起来，用 Vetta 开发并运维 Cloudflare 项目。",
+            "description": "把官方平台知识、Wrangler 实践、Workers 审查、实时文档和可选账号授权组合起来，用 Youth 开发并运维 Cloudflare 项目。",
             "tags": [
               "Cloudflare",
               "Workers",
@@ -439,7 +439,7 @@
       "version": "1.1.22",
       "configVersion": 1,
       "license": "Apache-2.0",
-      "author": "Vetta / xpzouying",
+      "author": "Youth / xpzouying",
       "category": "Social",
       "categoryI18n": {
         "zh": "社交",
@@ -456,7 +456,7 @@
         "i18n": {
           "zh": {
             "name": "小红书账号",
-            "description": "在 Vetta 中管理多个小红书账号，Agent 可自动选择账号并同时执行内置 MCP 任务。"
+            "description": "在 Youth 中管理多个小红书账号，Agent 可自动选择账号并同时执行内置 MCP 任务。"
           }
         }
       },
@@ -502,10 +502,10 @@
       "type": "bundle",
       "slug": "zhihu-research",
       "name": "Zhihu Research",
-      "description": "Ask Vetta to research Zhihu experiences and current discussions, compare viewpoints and return source links.",
+      "description": "Ask Youth to research Zhihu experiences and current discussions, compare viewpoints and return source links.",
       "version": "1.0.0",
       "configVersion": 1,
-      "author": "Vetta / Klarkxy",
+      "author": "Youth / Klarkxy",
       "category": "Social",
       "categoryI18n": {
         "zh": "社交",
@@ -521,7 +521,7 @@
         "i18n": {
           "zh": {
             "name": "知乎调研",
-            "description": "让 Vetta 帮你调研知乎口碑与热点讨论，整理不同观点，并附上可核查的来源链接。",
+            "description": "让 Youth 帮你调研知乎口碑与热点讨论，整理不同观点，并附上可核查的来源链接。",
             "tags": [
               "知乎",
               "调研",
@@ -561,7 +561,7 @@
       "version": "0.3.0",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta",
+      "author": "Youth",
       "category": "Entertainment",
       "categoryI18n": {
         "zh": "娱乐",
@@ -600,7 +600,7 @@
       "version": "0.3.1",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta",
+      "author": "Youth",
       "category": "Development",
       "categoryI18n": {
         "zh": "开发",
@@ -641,7 +641,7 @@
       "version": "1.0.0",
       "configVersion": 1,
       "license": "MIT",
-      "author": "Vetta / REA",
+      "author": "Youth / REA",
       "category": "Development",
       "categoryI18n": {
         "zh": "开发",

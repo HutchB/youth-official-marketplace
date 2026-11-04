@@ -56,7 +56,7 @@
   "ai.selectModel": "Select a model",
   "ai.loadingModels": "Loading…",
   "ai.reloadModels": "Reload",
-  "ai.noModels": "No text model is available. Configure a model provider in Vetta first.",
+  "ai.noModels": "No text model is available. Configure a model provider in Youth first.",
   "ai.modelRequired": "Choose a reading model in Reading preferences first.",
   "ai.modelSaved": "Reading model updated",
   "ai.searchModels": "Search models…",

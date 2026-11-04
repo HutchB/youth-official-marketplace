@@ -1,6 +1,6 @@
-# 在 Vetta 中使用 Cloudflare 文档
+# 在 Youth 中使用 Cloudflare 文档
 
-这个包让 Vetta 直接连接 Cloudflare 官方托管的文档端点：
+这个包让 Youth 直接连接 Cloudflare 官方托管的文档端点：
 
 ```text
 https://docs.mcp.cloudflare.com/mcp

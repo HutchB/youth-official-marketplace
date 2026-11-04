@@ -1,11 +1,11 @@
 # Cloudflare Developer Platform — integration notes
 
-This document covers package selection, setup and security boundaries. Vetta's detail page uses
+This document covers package selection, setup and security boundaries. Youth's detail page uses
 [a user-facing introduction](detail.json), with [a Chinese version](detail.zh.json).
 
 The bundle brings together three official Cloudflare skills and two Cloudflare-hosted MCP services.
 Only the bundle appears in marketplace discovery; every member keeps a stable identity and remains
-independently selectable, installable, removable and switchable in Vetta.
+independently selectable, installable, removable and switchable in Youth.
 
 ## Choose what to install
 
@@ -19,14 +19,14 @@ independently selectable, installable, removable and switchable in Vetta.
   this member requires browser authorization.
 
 Install the first four for development and read-only research without account authorization. Add
-Cloudflare API only when Vetta must inspect or change resources that are not available through your
+Cloudflare API only when Youth must inspect or change resources that are not available through your
 project's existing Wrangler session.
 
 ## Runtime and authorization
 
 The MCP members use Streamable HTTP at `https://docs.mcp.cloudflare.com/mcp` and
 `https://mcp.cloudflare.com/mcp`. They do not install a local executable and do not ask for an API
-token in Vetta. Cloudflare Documentation is public. Cloudflare API starts Cloudflare's browser OAuth
+token in Youth. Cloudflare Documentation is public. Cloudflare API starts Cloudflare's browser OAuth
 flow; choose the smallest useful account, resource and action scope.
 
 Wrangler is not installed globally by this package. The skill follows the repository's package
@@ -35,7 +35,7 @@ need Node.js, network access and an explicit dependency installation before comm
 
 ## Safety boundary
 
-Skills provide instructions; they do not auto-run deployments or bypass Vetta's normal command and
+Skills provide instructions; they do not auto-run deployments or bypass Youth's normal command and
 tool confirmations. Wrangler and Cloudflare API can change live DNS, deployments, storage, security
 configuration and other account resources. Some operations can incur charges. Prefer test resources,
 least-privilege authorization and read-only inspection first, then review the exact target before a
@@ -49,6 +49,6 @@ not as code installed locally by this marketplace package.
 
 The three skills are vendored from [`cloudflare/skills`](https://github.com/cloudflare/skills) at
 commit `f96bff754e428838818017f75817f0f9428acd48`. Their upstream source and Apache-2.0 license are
-preserved in each package; Vetta adds package metadata, bilingual product details, the upstream
+preserved in each package; Youth adds package metadata, bilingual product details, the upstream
 version and the official Cloudflare logo. The hosted services remain governed by Cloudflare's terms
 and the permissions granted during authorization.

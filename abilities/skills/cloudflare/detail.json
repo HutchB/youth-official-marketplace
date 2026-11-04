@@ -3,16 +3,16 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "CLOUDFLARE IN VETTA",
+      "eyebrow": "CLOUDFLARE IN YOUTH",
       "title": "Design with the whole Cloudflare platform in view",
-      "description": "Give Vetta the platform map and decision rules it needs to choose suitable Cloudflare services, configuration and deployment paths.",
+      "description": "Give Youth the platform map and decision rules it needs to choose suitable Cloudflare services, configuration and deployment paths.",
       "badges": ["Workers", "Storage", "AI", "Networking", "Security"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Design a Cloudflare architecture for a global API with durable state, object storage and private origin access.",
         "assistant_reply": "I’ll separate compute, state, storage and network access, verify current Cloudflare contracts, and explain the operational tradeoffs before changing any resources."
       }
@@ -40,10 +40,10 @@
     },
     {
       "type": "steps",
-      "title": "Use it in Vetta",
+      "title": "Use it in Youth",
       "items": [
         { "title": "Describe the outcome", "description": "Explain what you are building, your traffic, data and security needs, and any existing Cloudflare resources." },
-        { "title": "Review the proposal", "description": "Ask Vetta to compare alternatives and verify changing limits or API contracts before implementation." },
+        { "title": "Review the proposal", "description": "Ask Youth to compare alternatives and verify changing limits or API contracts before implementation." },
         { "title": "Choose when to act", "description": "Use the separate documentation and account connections only when the task needs live information or resource changes." }
       ]
     },

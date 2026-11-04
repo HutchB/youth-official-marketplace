@@ -3,7 +3,7 @@
   "type": "mcp",
   "slug": "cloudflare-docs",
   "name": "Cloudflare Documentation",
-  "description": "Search current Cloudflare documentation and reference material directly from Vetta when APIs, limits or configuration may have changed.",
+  "description": "Search current Cloudflare documentation and reference material directly from Youth when APIs, limits or configuration may have changed.",
   "version": "1.0.0",
   "configVersion": 1,
   "license": "Apache-2.0",
@@ -23,7 +23,7 @@
     "i18n": {
       "zh": {
         "name": "Cloudflare 文档",
-        "description": "当 API、限制或配置可能发生变化时，直接在 Vetta 中搜索当前 Cloudflare 文档和参考资料。",
+        "description": "当 API、限制或配置可能发生变化时，直接在 Youth 中搜索当前 Cloudflare 文档和参考资料。",
         "tags": ["Cloudflare", "文档", "参考", "Workers", "搜索"],
         "path": "detail.zh.json"
       }

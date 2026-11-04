@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "feature-grid",
-      "title": "在 Vetta 中使用 Notion",
+      "title": "在 Youth 中使用 Notion",
       "items": [
         {
           "title": "查找工作区知识",
@@ -33,14 +33,14 @@
       "items": [
         {
           "title": "安装 Notion",
-          "description": "在 Vetta 能力市场中添加，无需安装本地服务或运行环境。"
+          "description": "在 Youth 能力市场中添加，无需安装本地服务或运行环境。"
         },
         {
           "title": "在浏览器中授权",
           "description": "登录 Notion，选择工作区，并确认 Notion 页面上展示的访问权限。"
         },
         {
-          "title": "让 Vetta 使用 Notion",
+          "title": "让 Youth 使用 Notion",
           "description": "在对话里提出搜索、总结、更新页面或新建页面的需求。"
         }
       ]
@@ -49,11 +49,11 @@
       "type": "callout",
       "tone": "info",
       "title": "授权由你掌控",
-      "content": "授权前，Notion 会展示工作区与权限。你可以随时在 Vetta 中断开连接，也可以在 Notion 中管理连接。"
+      "content": "授权前，Notion 会展示工作区与权限。你可以随时在 Youth 中断开连接，也可以在 Notion 中管理连接。"
     },
     {
       "type": "markdown",
-      "content": "## 隐私说明\n\nVetta 通过 HTTPS 直连 Notion 官方托管的 MCP 服务。授权凭证只保存在本机，不会上传到 Vetta 服务器；只有在对话使用该连接器时才会访问 Notion 数据。"
+      "content": "## 隐私说明\n\nVetta 通过 HTTPS 直连 Notion 官方托管的 MCP 服务。授权凭证只保存在本机，不会上传到 Youth 服务器；只有在对话使用该连接器时才会访问 Notion 数据。"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "blocks": [
     {
       "type": "feature-grid",
-      "title": "Work with Notion from Vetta",
+      "title": "Work with Notion from Youth",
       "items": [
         {
           "title": "Find workspace knowledge",
@@ -33,14 +33,14 @@
       "items": [
         {
           "title": "Install Notion",
-          "description": "Add this Ability from the Vetta marketplace. There is no local server or runtime to install."
+          "description": "Add this Ability from the Youth marketplace. There is no local server or runtime to install."
         },
         {
           "title": "Authorize in your browser",
           "description": "Sign in to Notion, choose the workspace and approve the access shown by Notion."
         },
         {
-          "title": "Ask Vetta to use Notion",
+          "title": "Ask Youth to use Notion",
           "description": "Request a search, summary, page update or new page in a conversation."
         }
       ]
@@ -49,11 +49,11 @@
       "type": "callout",
       "tone": "info",
       "title": "You control access",
-      "content": "Notion shows the workspace and permissions before you approve them. You can disconnect the connector in Vetta and manage the connection from Notion."
+      "content": "Notion shows the workspace and permissions before you approve them. You can disconnect the connector in Youth and manage the connection from Notion."
     },
     {
       "type": "markdown",
-      "content": "## Privacy\n\nVetta connects directly to Notion's hosted MCP endpoint over HTTPS. Authorization credentials stay on this device and are not uploaded to Vetta's servers. Notion data is accessed only when a conversation uses the connector."
+      "content": "## Privacy\n\nVetta connects directly to Notion's hosted MCP endpoint over HTTPS. Authorization credentials stay on this device and are not uploaded to Youth's servers. Notion data is accessed only when a conversation uses the connector."
     }
   ]
 }

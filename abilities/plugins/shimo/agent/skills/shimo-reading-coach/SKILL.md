@@ -1,7 +1,7 @@
 ---
 name: shimo-reading-coach
 description: >-
-  Guide Vetta when the user is reading in Shimo and asks about selected text. Preserve the exact
+  Guide Youth when the user is reading in Shimo and asks about selected text. Preserve the exact
   selection, material title and location; answer in the user's language unless they request another.
   Explain from plain meaning to structure and implications, distinguish quotation from inference,
   and keep uncertainty visible. Use Shimo's selected reading model and save the reading record

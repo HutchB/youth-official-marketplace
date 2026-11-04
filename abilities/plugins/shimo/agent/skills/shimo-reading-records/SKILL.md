@@ -5,7 +5,7 @@ description: >-
   Every record must keep a stable material and location anchor, language and creation time. Save by
   default, preserve original answers when users edit or regenerate, and make exports round-trippable
   JSON or readable Markdown/HTML with a filename derived from the current material title. Never write
-  over the source material or invent a Vetta-prefixed export filename.
+  over the source material or invent a Youth-prefixed export filename.
 version: 1.0.0
 ---
 

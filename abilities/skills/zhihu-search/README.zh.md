@@ -1,19 +1,19 @@
 # 知乎检索指南：接入与排查说明
 
-本文面向需要高级设置、问题排查或维护集成的人。Vetta 详情页使用独立的[产品介绍](detail.zh.json)，
+本文面向需要高级设置、问题排查或维护集成的人。Youth 详情页使用独立的[产品介绍](detail.zh.json)，
 不直接展示这份技术说明；另有[英文详情](detail.json)。
 
 为中文社区调研选择合适路径：需要可核查来源时搜索，需要综合解释时直答，需要当前讨论时查看热榜。
 输出来源并说明证据不足，不为纯仓库代码问题、翻译或逻辑题自动调用外部接口，除非用户明确要求外部证据。
 
-## 在 Vetta 中使用
+## 在 Youth 中使用
 
 可单独安装，也可在“知乎调研”中选择。搭配“知乎搜索”时直接复用可见的 `zhihu-search-mcp` 工具，不重复发起 CLI 查询。
 只安装指南不会安装服务，也不会自动安装 Python/uv。
 
 独立 CLI 使用需要 PATH 中可用的 [uv](https://docs.astral.sh/uv/getting-started/installation/)、Python 3.10+
 （uv 可获取）、网络和单独配置的凭据。所有 CLI 示例均固定 `zhihu-search==2.0.0`。
-MCP 的 Secret 不自动共享给 CLI，指南不得通过读取 Vetta 文件提取凭据。
+MCP 的 Secret 不自动共享给 CLI，指南不得通过读取 Youth 文件提取凭据。
 技术配置见包内 [setup and diagnostics](references/setup.md)。
 
 用户数据、知识库、上传、PDF/PPT 和 OAuth 操作需要用户明确要求。真实查询可能消耗上游额度，不将其用作自动健康检查。

@@ -34,6 +34,6 @@
     "skillPaths": ["agent/skills/feishu"]
   },
   "description": "%description%",
-  "author": "Vetta / Lark Suite",
+  "author": "Youth / Lark Suite",
   "defaultLocale": "en"
 }

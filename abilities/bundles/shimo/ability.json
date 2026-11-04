@@ -5,10 +5,10 @@
   "version": "1.0.0",
   "icon": "assets/icon.png",
   "name": "Shimo",
-  "description": "An immersive bilingual reading workspace for books, poetry and study notes in Vetta, with Shimo reading Skills shipped inside the reader plugin.",
+  "description": "An immersive bilingual reading workspace for books, poetry and study notes in Youth, with Shimo reading Skills shipped inside the reader plugin.",
   "configVersion": 1,
   "license": "MIT",
-  "author": "Vetta",
+  "author": "Youth",
   "category": "Education",
   "categoryI18n": {
     "zh": "学习",
@@ -29,7 +29,7 @@
       "zh": {
         "path": "detail.zh.json",
         "name": "拾墨",
-        "description": "在 Vetta 中沉浸式阅读书籍与诗歌，划选内容即可提问、解析、标注拼音并保存阅读记录。"
+        "description": "在 Youth 中沉浸式阅读书籍与诗歌，划选内容即可提问、解析、标注拼音并保存阅读记录。"
       }
     }
   }

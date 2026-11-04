@@ -54,7 +54,7 @@ export const SERVE_SIM_ENV: Readonly<Record<string, string>> = { NSUnbufferedIO:
  * 然后退回旧注入——在 Xcode 27 上等于按键丢失。点击与滑动不走这条路，不受影响。
  */
 export type KeyboardIssueKind =
-	/** 拉起 serve-sim 的应用（Vetta）没有辅助功能权限，不能投递按键。 */
+	/** 拉起 serve-sim 的应用（Youth）没有辅助功能权限，不能投递按键。 */
 	| "accessibility"
 	/** Device Hub 没在运行。 */
 	| "device-hub"

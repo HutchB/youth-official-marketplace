@@ -1,6 +1,6 @@
-# CLIProxyAPI for Vetta
+# CLIProxyAPI for Youth
 
-This marketplace plugin runs pinned CLIProxyAPI release assets as a Vetta-managed loopback service. All
+This marketplace plugin runs pinned CLIProxyAPI release assets as a Youth-managed loopback service. All
 CLIProxyAPI-specific management routes, OAuth provider definitions, account aggregation and model protocol mapping
 live in this package; the Desktop host only provides generic service and owned-model APIs.
 
@@ -8,11 +8,11 @@ The plugin supports OAuth for Gemini CLI, OpenAI Codex, Claude Code, Google Anti
 discovers live routes from `/v1/models` and publishes Google, Anthropic, Responses and compatible Completions model
 providers in the plugin-owned namespace. The model picker groups credentials into supplier pools: one route is shown
 once per supplier and protocol, while every matching enabled credential remains available to CPA for balancing and
-failover. Image-capable routes are excluded from text providers and exposed as individual Vetta image models. OpenAI
+failover. Image-capable routes are excluded from text providers and exposed as individual Youth image models. OpenAI
 routes use CPA's Images API; Google and Antigravity routes use `generateContent`, including scoped input reads for
-image-to-image requests. Returned images are stored as Vetta-managed artifacts.
+image-to-image requests. Returned images are stored as Youth-managed artifacts.
 
-Routing uses CPA session affinity. Main responses, automatic titles and other model calls that carry the same Vetta
+Routing uses CPA session affinity. Main responses, automatic titles and other model calls that carry the same Youth
 conversation identity stay on one healthy account; CPA may rebind the conversation only when that credential becomes
 unavailable. Subagents explicitly inherit the parent account (`session-affinity-subagents: true`). This prevents a single user turn from appearing as simultaneous traffic on multiple accounts of the same
 provider while preserving normal account-level failover.
@@ -48,7 +48,7 @@ The current development source pins CPA 8.0.52 and Gemini CLI 1.0.5. Core manage
 The config template uses the v8 sections: `server`, `management`, `access`, `oauth`, `requests`, `observability`, and
 `routing.retry`. Client keys belong to `access.api-keys`, not the upstream-provider `api-keys` groups. Retries remain
 disabled with a single credential attempt; Antigravity credit spending remains disabled. Obsolete quota-switch flags
-have no active v8 equivalent and are omitted. Auth data and saved Vetta model selections retain their existing paths.
+have no active v8 equivalent and are omitted. Auth data and saved Youth model selections retain their existing paths.
 
 Meta Muse Code, Devin and Kimi.ai have separate login entries and model channels. Credentials expose
 per-model/account cooldowns and an explicit refresh action. Refreshed token payloads are discarded by the plugin.
@@ -57,10 +57,10 @@ probes. Existing Codex/Antigravity probes remain fallbacks. The plugin does not 
 Normalized quota supports grouped limits and numeric/currency summaries. Unknown or failed quota is never treated as unlimited.
 
 Model input modalities and `native_capabilities.web_search` are read from upstream data. Only text/image inputs are
-published to the current Vetta chat contract. Desktop 0.5.61 development changes and the pending SDK input declaration add preservation of
+published to the current Youth chat contract. Desktop 0.5.61 development changes and the pending SDK input declaration add preservation of
 `input` at the model write boundary; older hosts silently omit it. This plugin remains compilable with published SDK
 0.3.10 and preserves input during read-back without importing host source. Audio/video/file and native search labels
-are informational: this change does not add corresponding Vetta attachment or native tool APIs. Do not infer support
+are informational: this change does not add corresponding Youth attachment or native tool APIs. Do not infer support
 from model names. Account entitlements still determine the routes actually available.
 
 From the repository root, run the isolated binary canary with Python 3.9 or later:

@@ -4,7 +4,7 @@
     {
       "type": "hero",
       "title": "A quiet reader for active learning",
-      "description": "Import a copy of a PDF, Markdown or TXT file, choose a configured Vetta model, and ask about selected passages without leaving the reader.",
+      "description": "Import a copy of a PDF, Markdown or TXT file, choose a configured Youth model, and ask about selected passages without leaving the reader.",
       "badges": [
         "Private copy",
         "Offline records",

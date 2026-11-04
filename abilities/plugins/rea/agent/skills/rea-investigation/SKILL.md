@@ -1,6 +1,6 @@
 ---
 name: rea-investigation
-description: Run a reverse-engineering investigation with REA and keep every finding on the Vetta case board. Use when the user wants to understand how an application, binary, website, package or protocol works — not when they just want their own code explained.
+description: Run a reverse-engineering investigation with REA and keep every finding on the Youth case board. Use when the user wants to understand how an application, binary, website, package or protocol works — not when they just want their own code explained.
 ---
 
 # Evidence-led reverse engineering with REA

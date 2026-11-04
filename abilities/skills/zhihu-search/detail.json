@@ -3,9 +3,9 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "MORE FOCUSED RESEARCH IN VETTA",
+      "eyebrow": "MORE FOCUSED RESEARCH IN YOUTH",
       "title": "Get a useful answer, not just a list of links",
-      "description": "Help Vetta choose a suitable way to research your question, organize community viewpoints and explain what the evidence does and does not support.",
+      "description": "Help Youth choose a suitable way to research your question, organize community viewpoints and explain what the evidence does and does not support.",
       "badges": [
         "Focused questions",
         "Clearer summaries",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Research Zhihu discussions about moving from office work to working from home. Separate common experiences from individual cases and include sources.",
         "assistant_reply": "I’ll focus the search on that transition, group the experiences by theme and explain where the available sources are limited."
       }
@@ -46,7 +46,7 @@
       "type": "callout",
       "tone": "info",
       "title": "Use with Zhihu Search",
-      "content": "This guide does not provide access to Zhihu by itself. For the Vetta workflow, install and connect Zhihu Search alongside it. The guide needs no separate access key. Independent advanced use is covered in the integration notes below."
+      "content": "This guide does not provide access to Zhihu by itself. For the Youth workflow, install and connect Zhihu Search alongside it. The guide needs no separate access key. Independent advanced use is covered in the integration notes below."
     },
     {
       "type": "steps",
@@ -58,7 +58,7 @@
         },
         {
           "title": "Describe the result you want",
-          "description": "Give Vetta a topic and a focus, such as common complaints, differing experiences or current discussions."
+          "description": "Give Youth a topic and a focus, such as common complaints, differing experiences or current discussions."
         },
         {
           "title": "Review and follow up",

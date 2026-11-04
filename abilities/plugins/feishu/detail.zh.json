@@ -4,14 +4,14 @@
     {
       "type": "hero",
       "eyebrow": "官方 CLI Provider",
-      "title": "在 Vetta 对话中使用飞书",
+      "title": "在 Youth 对话中使用飞书",
       "description": "让 Agent 通过飞书官方 lark-cli 处理文档、消息、日历、多维表格、任务及其他已支持的飞书领域。",
       "badges": ["官方 lark-cli", "26 个内置 Skills", "直接使用 Shell"]
     },
     {
       "type": "callout",
       "tone": "info",
-      "content": "启用后，Vetta 会安装最新版官方 @larksuite/cli。安装完成会自动打开二维码配置流程，帮助你创建或连接飞书应用。App Secret 由 lark-cli 保存，Vetta 不会展示它。"
+      "content": "启用后，Youth 会安装最新版官方 @larksuite/cli。安装完成会自动打开二维码配置流程，帮助你创建或连接飞书应用。App Secret 由 lark-cli 保存，Youth 不会展示它。"
     },
     {
       "type": "showcase",
@@ -27,7 +27,7 @@
         {
           "icon": "solar:command-bold",
           "title": "直接使用 CLI",
-          "description": "Agent 通过已有 Shell 使用 lark-cli，不额外引入 Vetta Action、MCP 服务或自定义 Agent Tool。"
+          "description": "Agent 通过已有 Shell 使用 lark-cli，不额外引入 Youth Action、MCP 服务或自定义 Agent Tool。"
         },
         {
           "icon": "solar:book-2-bold",
@@ -46,14 +46,14 @@
       "items": [
         {
           "title": "安装并启用",
-          "description": "确认能力权限后，Vetta 会检查 lark-cli；只有本机缺失时才运行官方安装程序。"
+          "description": "确认能力权限后，Youth 会检查 lark-cli；只有本机缺失时才运行官方安装程序。"
         },
         {
           "title": "扫描配置二维码",
           "description": "在官方流程中创建或连接飞书应用，并保持弹窗打开，直到 lark-cli 确认完成。"
         },
         {
-          "title": "直接向 Vetta 提需求",
+          "title": "直接向 Youth 提需求",
           "description": "Agent 会找到匹配的官方 CLI Skill，并通过 Shell 执行相应的 lark-cli 命令。"
         }
       ]

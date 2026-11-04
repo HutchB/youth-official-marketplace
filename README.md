@@ -1,17 +1,17 @@
-# Vetta Official Marketplace
+# Youth Official Marketplace
 
-Official ability marketplace for the Vetta desktop application's GitHub ability source.
+Official ability marketplace for the Youth desktop application's GitHub ability source.
 
 The catalog includes document skills, Notion, Cloudflare, Xiaohongshu, X API and
 [Zhihu Research](abilities/bundles/zhihu-research/README.md). Zhihu Research combines a research
 guide with a separately installable search connection, using `klarkxy/zhihu-search` without
 modifying its Python implementation. Its MCP requires uv on PATH and a Zhihu Access Secret;
-Vetta collects the secret during installation. This is not a zero-runtime-dependency integration.
+Youth collects the secret during installation. This is not a zero-runtime-dependency integration.
 
 The Feishu ability is a CLI Provider plugin. Enabling it asks Desktop to probe and, when needed,
 install the official `@larksuite/cli`; its detail-page slot shows the real lifecycle and turns the
 official CLI's opaque setup URL into a QR code. Agent work still goes through the existing shell and
-the CLI's bundled skills—there is no Vetta Action, MCP server or replacement Agent tool in between.
+the CLI's bundled skills—there is no Youth Action, MCP server or replacement Agent tool in between.
 
 The Notion ability connects directly to Notion's official hosted MCP endpoint. Users install it and
 complete browser authorization for their own workspace; no developer application, integration
@@ -44,7 +44,7 @@ This follows the [Helm chart-releaser model](https://github.com/helm/chart-relea
 ## Create your own marketplace with an Agent
 
 The [`create-vetta-marketplace`](https://github.com/openvetta/vetta-skills/tree/main/skills/create-vetta-marketplace)
-Skill teaches an Agent how to create, validate, publish, and connect a GitHub based Vetta ability
+Skill teaches an Agent how to create, validate, publish, and connect a GitHub based Youth ability
 marketplace using the same schema v3 release model as this repository. It covers Skills, MCP
 servers, plugins, Bundles, immutable `.vettapkg` plugin assets, GitHub Actions checks, private
 repositories, compatibility branches, and Desktop source configuration.
@@ -58,18 +58,18 @@ npx skills add openvetta/vetta-skills --skill create-vetta-marketplace
 Then give your Agent this Prompt, replacing the values in angle brackets:
 
 ```text
-Use $create-vetta-marketplace to create my Vetta ability marketplace.
+Use $create-vetta-marketplace to create my Youth ability marketplace.
 
 Create a <public-or-private> GitHub repository named <repository> under <owner>. Use marketplace
-schema v3, main for source and gh-pages for distribution, and minimum Vetta Desktop version <x.y.z>. Set up the standard ability
+schema v3, main for source and gh-pages for distribution, and minimum Youth Desktop version <x.y.z>. Set up the standard ability
 layout for Skills, MCP servers, plugins, and Bundles; repository-level Agent instructions; and
 GitHub Actions validation. Publish plugin runtime output as immutable .vettapkg GitHub Release
 assets with SHA-256 metadata, and do not commit generated plugin archives or build output to the
 marketplace source tree. Generate the index on gh-pages; do not create a second catalog PR or require manual marketplaceVersion updates.
 
-Validate the generated repository with the Vetta Plugin CLI and the Desktop publication check,
+Validate the generated repository with the Youth Plugin CLI and the Desktop publication check,
 push it to GitHub, then report the repository URL and the exact repository and branch values I
-should add under Vetta Desktop -> Abilities -> Marketplace sources. Do not add sample abilities
+should add under Youth Desktop -> Abilities -> Marketplace sources. Do not add sample abilities
 unless I ask.
 ```
 
@@ -118,9 +118,9 @@ node --test tests/*.test.mjs
 
 Use a fresh output directory for each build (`--output DIR`). For incremental builds pass `--previous <gh-pages-checkout>`. On Windows with a Python shim, set VETTA_PYTHON to the actual python.exe. Local build never uploads anything.
 
-## Writing for Vetta users
+## Writing for Youth users
 
-Detail pages explain the outcome, show a conversation example and describe a short Vetta workflow.
+Detail pages explain the outcome, show a conversation example and describe a short Youth workflow.
 Keep command lines and integration internals in linked technical notes, not in the primary detail
 page. Disclose real prerequisites, credential requirements and important limits before the user
 starts; do not promise automatic setup the client does not provide. The bilingual Zhihu detail
@@ -137,4 +137,4 @@ The Cloudflare skills retain the upstream Apache-2.0 license and record their ex
 pinned revision in package-level `upstream.json` files, beginning with
 [Cloudflare Platform provenance](abilities/skills/cloudflare/upstream.json). The brand assets and
 skill content come from Cloudflare's official repository; marketplace metadata and bilingual detail
-pages are Vetta adaptations.
+pages are Youth adaptations.

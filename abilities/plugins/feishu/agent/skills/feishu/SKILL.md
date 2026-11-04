@@ -6,7 +6,7 @@ version: 1.0.0
 
 # Feishu through the official CLI
 
-Use `lark-cli` directly through the existing shell. Do not invent a Vetta tool or MCP layer around it.
+Use `lark-cli` directly through the existing shell. Do not invent a Youth tool or MCP layer around it.
 
 Before performing a task, discover the official guidance shipped with the installed CLI:
 

@@ -176,7 +176,7 @@ test("Feishu provides the official CLI lifecycle without adding an Action, MCP s
   assert.match(skill, /lark-cli skills list/u);
   assert.match(skill, /lark-cli skills read <skill-name>/u);
   assert.match(skill, /existing shell/u);
-  assert.match(skill, /Do not invent a Vetta tool or MCP layer/u);
+  assert.match(skill, /Do not invent a Youth tool or MCP layer/u);
 
   for (const detailPath of ["detail.json", "detail.zh.json"]) {
     const text = JSON.stringify(readJson(packageFile(directory, detailPath)));
@@ -489,7 +489,7 @@ for (const slug of [
   "cloudflare-docs",
   "cloudflare-api",
 ]) {
-  test(`${slug}: Cloudflare details provide a short Vetta journey in both languages`, () => {
+  test(`${slug}: Cloudflare details provide a short Youth journey in both languages`, () => {
     const ability = bySlug.get(slug);
     const directory = packageFile(root, ability.source.path);
     const presentation = readJson(packageFile(directory, "ability.json"));
@@ -502,7 +502,7 @@ for (const slug of [
       assert.ok(blocks.some((block) => block.type === "showcase"));
       const steps = blocks.find((block) => block.type === "steps");
       assert.ok(steps?.items.length > 0 && steps.items.length <= 3);
-      assert.match(JSON.stringify(blocks), /Vetta/u);
+      assert.match(JSON.stringify(blocks), /Youth/u);
     }
   });
 }
@@ -584,7 +584,7 @@ test("Zhihu guide pins CLI fallback, references local setup and preserves upstre
   assert.match(skill, /zhihu-search-mcp/u);
   assert.match(skill, /uvx --from zhihu-search==2\.0\.0 zhihu-search search/u);
   assert.doesNotMatch(skill, /uvx (?!--from zhihu-search==2\.0\.0 zhihu-search)/u);
-  assert.match(skill, /Never read Vetta.*credentials/u);
+  assert.match(skill, /Never read Youth.*credentials/u);
   const setup = readFileSync(packageFile(directory, "references/setup.md"), "utf8");
   assert.doesNotMatch(setup, /npx |install-skill|codex mcp|dsh plugin/u);
   assert.match(setup, /not shared with.*CLI/u);
@@ -599,7 +599,7 @@ test("Zhihu guide pins CLI fallback, references local setup and preserves upstre
 });
 
 for (const slug of ["zhihu-research", "zhihu-search", "zhihu-search-mcp"]) {
-  test(`${slug}: Vetta product details separate the user journey from integration instructions in both languages`, () => {
+  test(`${slug}: Youth product details separate the user journey from integration instructions in both languages`, () => {
     const ability = bySlug.get(slug);
     const directory = packageFile(root, ability.source.path);
     const presentation = readJson(packageFile(directory, "ability.json"));
@@ -614,7 +614,7 @@ for (const slug of ["zhihu-research", "zhihu-search", "zhihu-search-mcp"]) {
       const steps = blocks.find((block) => block.type === "steps");
       assert.ok(steps?.items.length > 0 && steps.items.length <= 3);
       const text = JSON.stringify(blocks);
-      assert.match(text, /Vetta/u);
+      assert.match(text, /Youth/u);
       assert.doesNotMatch(text, /uvx|--from|stdio|ZHIHU_ACCESS_SECRET|PyPI|SHA-256|configVersion/u);
       const links = blocks.filter((block) => block.type === "links").flatMap((block) => block.items);
       assert.ok(links.some((link) => link.href.includes("vetta-official-marketplace") && link.href.includes("README")));

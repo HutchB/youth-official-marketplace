@@ -3,9 +3,9 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "ZHIHU RESEARCH IN VETTA",
+      "eyebrow": "ZHIHU RESEARCH IN YOUTH",
       "title": "Turn community experiences into useful evidence",
-      "description": "Tell Vetta what you want to understand. Find relevant Zhihu discussions, compare viewpoints and keep the links you need to check the answer.",
+      "description": "Tell Youth what you want to understand. Find relevant Zhihu discussions, compare viewpoints and keep the links you need to check the answer.",
       "badges": [
         "Product experiences",
         "Current discussions",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Find Zhihu discussions about standing desks for working from home. Summarize the benefits, common complaints and source links.",
         "assistant_reply": "I’ll look for relevant experiences, separate recurring themes from individual opinions, and include links you can review. I’ll flag gaps in the evidence."
       }
@@ -46,11 +46,11 @@
       "type": "callout",
       "tone": "info",
       "title": "Before you start: one-time preparation",
-      "content": "You need a Zhihu Access Secret and uv, a small local helper. Vetta does not currently install uv for you. Use the preparation links below, then restart Vetta after installing it. The first connection also needs internet access to download supporting files."
+      "content": "You need a Zhihu Access Secret and uv, a small local helper. Youth does not currently install uv for you. Use the preparation links below, then restart Youth after installing it. The first connection also needs internet access to download supporting files."
     },
     {
       "type": "steps",
-      "title": "Three steps in Vetta",
+      "title": "Three steps in Youth",
       "items": [
         {
           "title": "Install Zhihu Research",

@@ -25,7 +25,7 @@
       "zh": {
         "path": "detail.zh.json",
         "name": "知乎搜索",
-        "description": "在 Vetta 对话中搜索知乎内容、获取问题解答和查看当前热榜。",
+        "description": "在 Youth 对话中搜索知乎内容、获取问题解答和查看当前热榜。",
         "tags": [
           "知乎",
           "搜索",
@@ -36,7 +36,7 @@
     }
   },
   "name": "Zhihu Search",
-  "description": "Search Zhihu, ask questions and explore current trending topics in your Vetta conversation.",
+  "description": "Search Zhihu, ask questions and explore current trending topics in your Youth conversation.",
   "configVersion": 1,
   "license": "SATA-2.0",
   "author": "Klarkxy",

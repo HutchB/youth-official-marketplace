@@ -1,6 +1,6 @@
-# Cloudflare Documentation in Vetta
+# Cloudflare Documentation in Youth
 
-This package connects Vetta directly to Cloudflare's official hosted documentation endpoint:
+This package connects Youth directly to Cloudflare's official hosted documentation endpoint:
 
 ```text
 https://docs.mcp.cloudflare.com/mcp

@@ -3,9 +3,9 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "VETTA 沉浸式阅读",
+      "eyebrow": "YOUTH 沉浸式阅读",
       "title": "安静地读，在需要时自然地问",
-      "description": "拾墨让正文保持安静，直到你需要帮助。用中文、英文或混合资料阅读书籍、诗歌和文章，划选内容向 Vetta 提问，在汉字上方显示拼音，并把每一条记录保存在正在学习的资料副本中。",
+      "description": "拾墨让正文保持安静，直到你需要帮助。用中文、英文或混合资料阅读书籍、诗歌和文章，划选内容向 Youth 提问，在汉字上方显示拼音，并把每一条记录保存在正在学习的资料副本中。",
       "badges": [
         "PDF · Markdown · TXT",
         "中英文",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "解析这句诗，给汉字标注上方拼音，并把解释保存到我的阅读记录。",
         "assistant_reply": "我会保留你划选的诗句作为上下文，说明字面含义和意象，在原字上方添加拼音，并自动把回答保存到这份资料的阅读记录。"
       }
@@ -52,11 +52,11 @@
         },
         {
           "title": "遇到问题就划选",
-          "description": "使用简洁的类别操作条进行解释、诗句解析、拼音、翻译、记录或向 Vetta 提问。"
+          "description": "使用简洁的类别操作条进行解释、诗句解析、拼音、翻译、记录或向 Youth 提问。"
         },
         {
           "title": "稍后回到你的思考",
-          "description": "回答会自动保存在现有 Vetta 会话和阅读记录中。导出文件名根据资料标题生成。"
+          "description": "回答会自动保存在现有 Youth 会话和阅读记录中。导出文件名根据资料标题生成。"
         }
       ]
     },
@@ -64,7 +64,7 @@
       "type": "callout",
       "tone": "info",
       "title": "OCR 默认在本地运行",
-      "content": "拾墨默认使用 Vetta 内置的本地 OCR Provider。远程 OCR 只定义为未来可安装的 Provider Plugin 协议，不随 Bundle 提供任何厂商实现，也不会静默切换远程服务。"
+      "content": "拾墨默认使用 Youth 内置的本地 OCR Provider。远程 OCR 只定义为未来可安装的 Provider Plugin 协议，不随 Bundle 提供任何厂商实现，也不会静默切换远程服务。"
     },
     {
       "type": "links",
@@ -75,7 +75,7 @@
           "href": "https://github.com/openvetta/vetta-official-marketplace/blob/main/abilities/bundles/shimo/README.zh.md"
         },
         {
-          "label": "Vetta 官方能力市场",
+          "label": "Youth 官方能力市场",
           "href": "https://github.com/openvetta/vetta-official-marketplace"
         }
       ]

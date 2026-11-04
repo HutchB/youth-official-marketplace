@@ -17,12 +17,12 @@
         },
         {
           "title": "内置扫码登录",
-          "description": "Vetta 通过上游登录接口生成二维码，并以上游状态接口的结果判断是否登录。",
+          "description": "Youth 通过上游登录接口生成二维码，并以上游状态接口的结果判断是否登录。",
           "icon": "solar:qr-code-bold"
         },
         {
           "title": "受管本地运行时",
-          "description": "Vetta 自动下载并校验官方 Release 二进制，不需要安装 Go 或手工编辑 MCP 配置。",
+          "description": "Youth 自动下载并校验官方 Release 二进制，不需要安装 Go 或手工编辑 MCP 配置。",
           "icon": "solar:shield-check-bold"
         }
       ]
@@ -33,15 +33,15 @@
       "items": [
         {
           "title": "安装此 Ability",
-          "description": "Vetta 自动选择当前平台的官方 Release，校验 SHA-256 后安装到隔离的运行时目录。"
+          "description": "Youth 自动选择当前平台的官方 Release，校验 SHA-256 后安装到隔离的运行时目录。"
         },
         {
           "title": "完成扫码登录",
-          "description": "Vetta 通过上游登录接口获取二维码并轮询真实登录状态，Cookie 由上游服务持久化。"
+          "description": "Youth 通过上游登录接口获取二维码并轮询真实登录状态，Cookie 由上游服务持久化。"
         },
         {
           "title": "按需配置并开始使用",
-          "description": "可在能力详情的“连接设置”中填写代理地址；保存不会自动触发扫码，Vetta 会通过受管回环 HTTP 直连上游服务。"
+          "description": "可在能力详情的“连接设置”中填写代理地址；保存不会自动触发扫码，Youth 会通过受管回环 HTTP 直连上游服务。"
         }
       ]
     },
@@ -53,7 +53,7 @@
     },
     {
       "type": "markdown",
-      "content": "## 隐私与账号安全\n\n此 Ability 连接官方 `xpzouying/xiaohongshu-mcp` 服务。Vetta 将 Cookie 保存在 Ability 专属数据目录，不会放入版本化可执行文件目录。批量发布或互动前，请阅读上游项目说明及小红书账号使用政策。"
+      "content": "## 隐私与账号安全\n\n此 Ability 连接官方 `xpzouying/xiaohongshu-mcp` 服务。Youth 将 Cookie 保存在 Ability 专属数据目录，不会放入版本化可执行文件目录。批量发布或互动前，请阅读上游项目说明及小红书账号使用政策。"
     }
   ]
 }

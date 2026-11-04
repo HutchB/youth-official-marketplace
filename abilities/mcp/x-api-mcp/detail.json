@@ -21,7 +21,7 @@
           "icon": "solar:shield-check-bold"
         },
         {
-          "title": "Vetta-managed secret input",
+          "title": "Youth-managed secret input",
           "description": "The token is collected as a secret parameter and stored in the MCP header configuration.",
           "icon": "solar:key-bold"
         }
@@ -37,7 +37,7 @@
         },
         {
           "title": "Install this Ability",
-          "description": "Vetta connects to the hosted X MCP endpoint and asks for the token through a protected input field."
+          "description": "Youth connects to the hosted X MCP endpoint and asks for the token through a protected input field."
         },
         {
           "title": "Search and inspect X",
@@ -53,7 +53,7 @@
     },
     {
       "type": "markdown",
-      "content": "## Security\n\nUse a dedicated X app and grant only the scopes you need. Vetta sends the Bearer Token only to `https://api.x.com/mcp` over HTTPS; never paste the token into prompts, source files or shared logs. X API usage remains subject to X rate limits and developer terms."
+      "content": "## Security\n\nUse a dedicated X app and grant only the scopes you need. Youth sends the Bearer Token only to `https://api.x.com/mcp` over HTTPS; never paste the token into prompts, source files or shared logs. X API usage remains subject to X rate limits and developer terms."
     }
   ]
 }

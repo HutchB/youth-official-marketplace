@@ -25,7 +25,7 @@
       "zh": {
         "path": "detail.zh.json",
         "name": "知乎检索指南",
-        "description": "让 Vetta 围绕你的问题查找社区观点、整理依据，并说明资料的局限。",
+        "description": "让 Youth 围绕你的问题查找社区观点、整理依据，并说明资料的局限。",
         "tags": [
           "知乎",
           "检索",
@@ -37,7 +37,7 @@
     }
   },
   "name": "Zhihu Research Guide",
-  "description": "Help Vetta focus your research, organize community viewpoints and explain the limits of the evidence.",
+  "description": "Help Youth focus your research, organize community viewpoints and explain the limits of the evidence.",
   "configVersion": 1,
   "license": "SATA-2.0",
   "author": "Klarkxy",

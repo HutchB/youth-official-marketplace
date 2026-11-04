@@ -37,5 +37,5 @@ npm install
 npm run check
 npm test
 npm run build            # dist/ 必须提交
-npm run install:vetta    # 打包并安装到正在运行的 Vetta
+npm run install:vetta    # 打包并安装到正在运行的 Youth
 ```

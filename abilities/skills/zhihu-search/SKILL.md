@@ -14,16 +14,16 @@ demand. Never add a persistent MCP server merely to complete an occasional reque
 [references/setup.md](references/setup.md) only for installation, credentials, optional
 high-frequency MCP integration, or diagnostics.
 
-## Vetta integration boundary
+## Youth integration boundary
 
 The companion server is registered as `zhihu-search-mcp`; match tools to that server's identity
 rather than assuming a literal unprefixed tool name. The bundle is optional: installing this guide
 alone does not install or start a server.
 
-Vetta stores the companion Access Secret in the MCP configuration and injects it only into that
-server process. It is not automatically available to standalone CLI commands. Never read Vetta configuration to extract credentials or copy them into the CLI, chat, logs, or command arguments.
+Youth stores the companion Access Secret in the MCP configuration and injects it only into that
+server process. It is not automatically available to standalone CLI commands. Never read Youth configuration to extract credentials or copy them into the CLI, chat, logs, or command arguments.
 If the companion server is installed but disconnected, disabled, or awaiting credentials, ask the
-user to enable/configure it in Vetta instead of bypassing that state with CLI calls. Use CLI
+user to enable/configure it in Youth instead of bypassing that state with CLI calls. Use CLI
 fallback only for standalone use with credentials the user configured separately.
 
 ## Route the request

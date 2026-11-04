@@ -4,8 +4,8 @@
     {
       "type": "hero",
       "eyebrow": "把知乎内容带进对话",
-      "title": "想查知乎，直接问 Vetta",
-      "description": "搜索相关讨论、获取问题解答或查看当前热榜，在 Vetta 的对话中继续追问和整理。",
+      "title": "想查知乎，直接问 Youth",
+      "description": "搜索相关讨论、获取问题解答或查看当前热榜，在 Youth 的对话中继续追问和整理。",
       "badges": [
         "内容搜索",
         "问题解答",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "今天知乎有哪些科技相关的热议话题？帮我挑出来，并附上链接。",
         "assistant_reply": "我会查看当前热榜，筛选相关科技话题，并附上可获取的来源链接，方便你继续了解。"
       }
@@ -27,7 +27,7 @@
       "items": [
         {
           "title": "寻找相关讨论",
-          "description": "用自己的话描述问题或主题，让 Vetta 帮你搜索知乎内容。",
+          "description": "用自己的话描述问题或主题，让 Youth 帮你搜索知乎内容。",
           "icon": "solar:magnifer-linear"
         },
         {
@@ -46,7 +46,7 @@
       "type": "callout",
       "tone": "info",
       "title": "首次使用前",
-      "content": "需要你自己的知乎访问密钥（Access Secret）和本机辅助工具 uv。目前 Vetta 不会自动安装 uv；请通过下方链接准备好，安装后重启 Vetta。首次使用会联网下载必要文件，可能需要多等一会儿。"
+      "content": "需要你自己的知乎访问密钥（Access Secret）和本机辅助工具 uv。目前 Youth 不会自动安装 uv；请通过下方链接准备好，安装后重启 Youth。首次使用会联网下载必要文件，可能需要多等一会儿。"
     },
     {
       "type": "steps",
@@ -58,11 +58,11 @@
         },
         {
           "title": "填写访问密钥",
-          "description": "在 Vetta 弹出的密码输入框中粘贴 Access Secret，完成配置。不需要手动修改配置文件。"
+          "description": "在 Youth 弹出的密码输入框中粘贴 Access Secret，完成配置。不需要手动修改配置文件。"
         },
         {
           "title": "回到对话开始查询",
-          "description": "连接成功后，让 Vetta 搜索讨论、解答问题或查看热榜。之后可在“我的”中管理连接。"
+          "description": "连接成功后，让 Youth 搜索讨论、解答问题或查看热榜。之后可在“我的”中管理连接。"
         }
       ]
     },

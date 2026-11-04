@@ -12,7 +12,7 @@ export const API_CREDENTIAL = "api-key";
 export type JsonRecord = Record<string, unknown>;
 
 /**
- * The capability fields Vetta stores per model. Everything here is optional
+ * The capability fields Youth stores per model. Everything here is optional
  * because the upstream catalog leaves it out for models it has no figures for,
  * and guessing is worse than the host default: a wrong context window makes the
  * agent compact too early or overflow the upstream request.
@@ -211,7 +211,7 @@ function readModelMetadata(entry: JsonRecord, channel: string): ModelMetadata {
   const contextWindow = positiveInteger(entry.context_length);
   const maxTokens = positiveInteger(entry.max_completion_tokens);
   const thinking = record(entry.thinking);
-  // Native Google/Anthropic adapters still map Vetta levels to token budgets.
+  // Native Google/Anthropic adapters still map Youth levels to token budgets.
   // Only effort-based protocols can consume the gateway's raw level vocabulary.
   const group = protocolGroupFor(textField(entry, "owned_by", "ownedBy") ?? channel, textField(entry, "id") ?? "");
   const levels = group === "responses" || group === "completions" ? thinking?.levels : undefined;

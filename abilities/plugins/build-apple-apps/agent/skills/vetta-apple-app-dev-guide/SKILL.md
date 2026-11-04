@@ -1,12 +1,12 @@
 ---
 name: vetta-apple-app-dev-guide
 alias: 构建 Apple App
-description: Build Apple apps inside Vetta — boot, build, install and launch on the iOS Simulator that the Vetta panel mirrors live, check results with screenshots and logs, and write or review SwiftUI with the bundled guides for components and navigation, Liquid Glass on iOS 26+, and performance audits. Use whenever the task involves an iOS/iPadOS/macOS app, an Xcode or SwiftPM project, SwiftUI code, or a Simulator.
+description: Build Apple apps inside Youth — boot, build, install and launch on the iOS Simulator that the Youth panel mirrors live, check results with screenshots and logs, and write or review SwiftUI with the bundled guides for components and navigation, Liquid Glass on iOS 26+, and performance audits. Use whenever the task involves an iOS/iPadOS/macOS app, an Xcode or SwiftPM project, SwiftUI code, or a Simulator.
 ---
 
-# Building Apple Apps in Vetta
+# Building Apple Apps in Youth
 
-macOS with Xcode only. This skill covers two things: driving the Simulator that Vetta mirrors in
+macOS with Xcode only. This skill covers two things: driving the Simulator that Youth mirrors in
 its panel, and writing SwiftUI that holds up.
 
 Keep this page in context and open a reference only when the task actually reaches it. Everything
@@ -26,7 +26,7 @@ Everything goes through Xcode's own tools: `xcrun simctl` for the device lifecyc
 logs and app state, and `xcodebuild` for building. There is no simulator MCP server and no other
 CLI behind the panel — do not look for simulator tools in the tool list.
 
-The Vetta panel mirrors the booted simulator live, and the user can tap and type in it. Reuse the
+The Youth panel mirrors the booted simulator live, and the user can tap and type in it. Reuse the
 booted device instead of creating another one — otherwise your work happens somewhere they cannot
 see. Both of you use the same device, so say what you are about to do before a destructive step.
 

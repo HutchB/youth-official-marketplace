@@ -5,14 +5,14 @@
       "type": "hero",
       "eyebrow": "实时 CLOUDFLARE 参考资料",
       "title": "不离开当前任务也能核对最新文档",
-      "description": "让 Vetta 通过 Cloudflare 托管的文档服务，搜索当前 API、配置、限制和迁移指南。",
+      "description": "让 Youth 通过 Cloudflare 托管的文档服务，搜索当前 API、配置、限制和迁移指南。",
       "badges": ["最新参考", "配置", "限制", "迁移"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "设计迁移方案前，核对一下 D1 当前支持的备份和恢复方式。",
         "assistant_reply": "我会搜索当前 Cloudflare 文档，区分已支持流程和推测，并附上相关官方参考链接。"
       }
@@ -28,7 +28,7 @@
     },
     {
       "type": "steps",
-      "title": "在 Vetta 中开始",
+      "title": "在 Youth 中开始",
       "items": [
         { "title": "安装连接", "description": "在 Cloudflare 开发平台中选择 Cloudflare 文档。" },
         { "title": "提出准确问题", "description": "说明产品，以及要核对的 API、限制、配置或迁移细节。" },

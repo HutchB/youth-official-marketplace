@@ -3,16 +3,16 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "CLOUDFLARE IN VETTA",
+      "eyebrow": "CLOUDFLARE IN YOUTH",
       "title": "Build and operate on Cloudflare with current, official guidance",
-      "description": "Give Vetta Cloudflare's platform knowledge, project-aware Wrangler practices, live documentation and optional account access in one selectable package.",
+      "description": "Give Youth Cloudflare's platform knowledge, project-aware Wrangler practices, live documentation and optional account access in one selectable package.",
       "badges": ["Workers", "Wrangler", "Live documentation", "Optional account access"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Review this Worker, add the right storage binding, test it locally and prepare a safe deployment plan.",
         "assistant_reply": "I’ll inspect the project, check current Cloudflare guidance, apply Workers best practices, and keep deployment or account changes behind your approval."
       }
@@ -52,7 +52,7 @@
         },
         {
           "title": "Describe the outcome and boundary",
-          "description": "Open your project and say what to build, review or inspect. State whether live changes are allowed before Vetta acts."
+          "description": "Open your project and say what to build, review or inspect. State whether live changes are allowed before Youth acts."
         }
       ]
     },

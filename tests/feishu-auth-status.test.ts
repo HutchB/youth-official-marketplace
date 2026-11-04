@@ -11,7 +11,7 @@ describe("readFeishuUserIdentity", () => {
           status: "ready",
           available: true,
           openId: "ou_123",
-          userName: "Vetta User",
+          userName: "Youth User",
           tokenStatus: "valid",
           scope: ["docx:document:readonly", "im:message"]
         }
@@ -20,7 +20,7 @@ describe("readFeishuUserIdentity", () => {
 
     expect(readFeishuUserIdentity(output)).toEqual({
       openId: "ou_123",
-      userName: "Vetta User",
+      userName: "Youth User",
       tokenStatus: "valid",
       scopeCount: 2
     });

@@ -38,14 +38,14 @@ plugins:
       priority: 10
 
 routing:
-  # Vetta owns retries, backoff, cancellation, and user-visible errors.
+  # Youth owns retries, backoff, cancellation, and user-visible errors.
   # Each request reaches at most one CPA credential attempt.
   retry:
     request-retry: 0
     max-retry-credentials: 1
     max-retry-interval: 0
   strategy: "round-robin"
-  # Keep every model call from one Vetta conversation on the same healthy account.
+  # Keep every model call from one Youth conversation on the same healthy account.
   # CPA automatically fails over and rebinds when that credential is unavailable.
   session-affinity: true
   session-affinity-ttl: "1h"

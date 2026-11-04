@@ -5,14 +5,14 @@
       "type": "hero",
       "eyebrow": "生产级 WORKERS",
       "title": "在部署前发现 Workers 特有问题",
-      "description": "让 Vetta 聚焦请求处理、异步任务、全局状态、Bindings、Secrets 和可观测性等审查要点。",
+      "description": "让 Youth 聚焦请求处理、异步任务、全局状态、Bindings、Secrets 和可观测性等审查要点。",
       "badges": ["代码审查", "可靠性", "性能", "安全"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "部署前帮我审查这个 Worker 的生产风险。",
         "assistant_reply": "我会检查请求生命周期、悬空 Promise、流式响应、Bindings、Secret 处理和可观测性，并按优先级给出具体修复。"
       }
@@ -28,9 +28,9 @@
     },
     {
       "type": "steps",
-      "title": "在 Vetta 中使用",
+      "title": "在 Youth 中使用",
       "items": [
-        { "title": "指向 Worker", "description": "让 Vetta 编写或审查 Worker 及其 Wrangler 配置。" },
+        { "title": "指向 Worker", "description": "让 Youth 编写或审查 Worker 及其 Wrangler 配置。" },
         { "title": "说明生产上下文", "description": "提供预期流量、数据依赖、延迟和失败处理要求。" },
         { "title": "应用并验证修复", "description": "审阅按优先级排列的问题，更新代码并在部署前运行项目相关测试。" }
       ]

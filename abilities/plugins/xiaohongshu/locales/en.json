@@ -1,6 +1,6 @@
 {
   "name": "Xiaohongshu Accounts",
-  "description": "Manage multiple Xiaohongshu accounts in Vetta and run MCP tasks concurrently through the account selected for each task.",
+  "description": "Manage multiple Xiaohongshu accounts in Youth and run MCP tasks concurrently through the account selected for each task.",
   "mcp.name": "Xiaohongshu tools",
   "mcp.description": "Run Xiaohongshu search, note and interaction operations for a selected account; omit account_id to use the active account.",
   "setup.title": "Xiaohongshu sign-in",

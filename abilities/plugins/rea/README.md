@@ -1,6 +1,6 @@
 # REA
 
-Vetta plugin for [REA](https://github.com/morluto/rea) (Reverse Engineer Anything).
+Youth plugin for [REA](https://github.com/morluto/rea) (Reverse Engineer Anything).
 
 REA itself is a CLI plus an MCP server. This plugin adds the part a chat transcript
 cannot hold: a durable **case** per investigation — target, route, goal, evidence

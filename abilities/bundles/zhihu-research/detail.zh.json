@@ -3,9 +3,9 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "在 Vetta 中调研知乎",
+      "eyebrow": "在 Youth 中调研知乎",
       "title": "把社区里的经验，变成有来源的参考",
-      "description": "告诉 Vetta 你想了解什么，查找相关讨论、梳理不同观点，并留下可以回看核查的来源链接。",
+      "description": "告诉 Youth 你想了解什么，查找相关讨论、梳理不同观点，并留下可以回看核查的来源链接。",
       "badges": [
         "真实体验",
         "热点讨论",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "帮我查查知乎上居家办公使用升降桌的体验，整理优点、常见问题和来源链接。",
         "assistant_reply": "我会查找相关体验，区分反复出现的观点和个别感受，并附上可回看的链接。资料不足的地方会单独说明。"
       }
@@ -46,11 +46,11 @@
       "type": "callout",
       "tone": "info",
       "title": "开始前：一次性准备",
-      "content": "需要知乎访问密钥（Access Secret），以及本机辅助工具 uv。目前 Vetta 不会自动安装 uv；可通过下方链接完成准备，安装后重启 Vetta。首次连接还需联网下载必要文件。"
+      "content": "需要知乎访问密钥（Access Secret），以及本机辅助工具 uv。目前 Youth 不会自动安装 uv；可通过下方链接完成准备，安装后重启 Youth。首次连接还需联网下载必要文件。"
     },
     {
       "type": "steps",
-      "title": "在 Vetta 中三步开始",
+      "title": "在 Youth 中三步开始",
       "items": [
         {
           "title": "安装“知乎调研”",
@@ -62,7 +62,7 @@
         },
         {
           "title": "直接说出你的问题",
-          "description": "连接成功后，在对话中描述主题，让 Vetta 整理观点、对比体验并附上来源。不需要学习命令或工具名称。"
+          "description": "连接成功后，在对话中描述主题，让 Youth 整理观点、对比体验并附上来源。不需要学习命令或工具名称。"
         }
       ]
     },

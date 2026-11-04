@@ -95,7 +95,7 @@ src/
 ```
 
 ### 内置 Agent Skills
-插件自带 3 个由 Vetta 托管的协同研读 Skill：
+插件自带 3 个由 Youth 托管的协同研读 Skill：
 - **`shimo-reading-coach`**：长文与通用研读教练，分层解析结构与论据；
 - **`shimo-poetry-analysis`**：古典诗赋专属解析器，考据典故、字调意象；
 - **`shimo-reading-records`**：阅读记录检视与关联，辅助读者回顾与整理认知资产。

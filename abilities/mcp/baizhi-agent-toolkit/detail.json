@@ -3,25 +3,25 @@
   "blocks": [
     {
       "type": "hero",
-      "title": "Use Baizhi Cloud tools in Vetta",
+      "title": "Use Baizhi Cloud tools in Youth",
       "description": "Connect the hosted Agent Toolkit with your own API key. Available tools depend on your account and key permissions."
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Research recent guidance on securing remote MCP connections. Summarize the key points and include links to the original sources.",
         "assistant_reply": "I’ll search with the tools available to your key, compare the sources I can access, and include links so you can check the claims."
       }
     },
     {
       "type": "feature-grid",
-      "title": "What you can ask Vetta to do",
+      "title": "What you can ask Youth to do",
       "items": [
         {
           "title": "Research a topic",
-          "description": "Ask Vetta to search the web when the search tool is available to your key.",
+          "description": "Ask Youth to search the web when the search tool is available to your key.",
           "icon": "solar:magnifer-bold"
         },
         {
@@ -45,12 +45,12 @@
           "description": "In the Baizhi Cloud console, check the key permissions and current service credits or fees."
         },
         {
-          "title": "Install this Ability in Vetta",
-          "description": "Enter the API key itself when prompted; Vetta adds the Bearer prefix to the connection."
+          "title": "Install this Ability in Youth",
+          "description": "Enter the API key itself when prompted; Youth adds the Bearer prefix to the connection."
         },
         {
           "title": "Ask for a source-backed answer",
-          "description": "For example, ask Vetta to research a topic and provide source links using the tools available to your key."
+          "description": "For example, ask Youth to research a topic and provide source links using the tools available to your key."
         }
       ]
     },
@@ -66,7 +66,7 @@
     },
     {
       "type": "markdown",
-      "content": "Provided by Baizhi Cloud (Chaitin). The Vetta marketplace listing was contributed by [@ct-jaryn](https://github.com/ct-jaryn)."
+      "content": "Provided by Baizhi Cloud (Chaitin). The Youth marketplace listing was contributed by [@ct-jaryn](https://github.com/ct-jaryn)."
     }
   ]
 }

@@ -3,16 +3,16 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "VETTA 中的 CLOUDFLARE",
+      "eyebrow": "YOUTH 中的 CLOUDFLARE",
       "title": "从完整平台视角设计 Cloudflare 方案",
-      "description": "让 Vetta 掌握 Cloudflare 产品地图和选择规则，为你的需求匹配服务、配置和部署路径。",
+      "description": "让 Youth 掌握 Cloudflare 产品地图和选择规则，为你的需求匹配服务、配置和部署路径。",
       "badges": ["Workers", "存储", "AI", "网络", "安全"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "为一个全球 API 设计 Cloudflare 架构，需要持久状态、对象存储和私有源站访问。",
         "assistant_reply": "我会拆分计算、状态、存储和网络访问，核对当前 Cloudflare 合同，并在更改任何资源前说明运维取舍。"
       }
@@ -40,10 +40,10 @@
     },
     {
       "type": "steps",
-      "title": "在 Vetta 中使用",
+      "title": "在 Youth 中使用",
       "items": [
         { "title": "描述目标", "description": "说明要构建什么、流量与数据需求、安全边界，以及现有 Cloudflare 资源。" },
-        { "title": "审阅方案", "description": "让 Vetta 比较备选方案，并在实施前核对易变化的限制或 API 合同。" },
+        { "title": "审阅方案", "description": "让 Youth 比较备选方案，并在实施前核对易变化的限制或 API 合同。" },
         { "title": "决定何时执行", "description": "只有需要实时信息或账号操作时，再使用独立的文档或账号连接。" }
       ]
     },

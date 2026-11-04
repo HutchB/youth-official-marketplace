@@ -3,9 +3,9 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "IMMERSIVE READING IN VETTA",
+      "eyebrow": "IMMERSIVE READING IN YOUTH",
       "title": "Read slowly, ask naturally, remember what matters",
-      "description": "Shimo keeps the page quiet until you need help. Read books, poetry and articles in Chinese or English, select a passage to ask Vetta, show pinyin above Chinese characters, and keep every note with the copy you are studying.",
+      "description": "Shimo keeps the page quiet until you need help. Read books, poetry and articles in Chinese or English, select a passage to ask Youth, show pinyin above Chinese characters, and keep every note with the copy you are studying.",
       "badges": [
         "PDF · Markdown · TXT",
         "Chinese + English",
@@ -16,7 +16,7 @@
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Explain this line of poetry, show pinyin above the Chinese characters, and save the interpretation with my reading notes.",
         "assistant_reply": "I’ll keep the selected line as context, explain its literal meaning and imagery, add pinyin in place, and save the answer to this reading record automatically."
       }
@@ -52,11 +52,11 @@
         },
         {
           "title": "Select when something catches",
-          "description": "Use the small category-aware action bar for explanation, poetry analysis, pinyin, translation, a note or a question to Vetta."
+          "description": "Use the small category-aware action bar for explanation, poetry analysis, pinyin, translation, a note or a question to Youth."
         },
         {
           "title": "Return to the thought later",
-          "description": "Answers save automatically in the existing Vetta conversation and as a reading record. Export records using a filename based on the material's title."
+          "description": "Answers save automatically in the existing Youth conversation and as a reading record. Export records using a filename based on the material's title."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "type": "callout",
       "tone": "info",
       "title": "OCR is local by default",
-      "content": "Shimo uses Vetta's built-in local OCR Provider by default. Remote OCR is an optional future Provider Plugin protocol, not a bundled vendor integration; a remote Provider is never selected silently."
+      "content": "Shimo uses Youth's built-in local OCR Provider by default. Remote OCR is an optional future Provider Plugin protocol, not a bundled vendor integration; a remote Provider is never selected silently."
     },
     {
       "type": "links",
@@ -75,7 +75,7 @@
           "href": "https://github.com/openvetta/vetta-official-marketplace/blob/main/abilities/bundles/shimo/README.md"
         },
         {
-          "label": "Vetta official marketplace",
+          "label": "Youth official marketplace",
           "href": "https://github.com/openvetta/vetta-official-marketplace"
         }
       ]

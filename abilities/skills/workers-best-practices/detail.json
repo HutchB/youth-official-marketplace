@@ -5,14 +5,14 @@
       "type": "hero",
       "eyebrow": "PRODUCTION WORKERS",
       "title": "Catch Workers-specific mistakes before deployment",
-      "description": "Give Vetta focused review criteria for request handling, asynchronous work, global state, bindings, secrets and observability.",
+      "description": "Give Youth focused review criteria for request handling, asynchronous work, global state, bindings, secrets and observability.",
       "badges": ["Code review", "Reliability", "Performance", "Security"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "Review this Worker for production risks before I deploy it.",
         "assistant_reply": "I’ll inspect request lifecycles, floating promises, streaming, bindings, secret handling and observability, then prioritize concrete fixes."
       }
@@ -28,9 +28,9 @@
     },
     {
       "type": "steps",
-      "title": "Use it in Vetta",
+      "title": "Use it in Youth",
       "items": [
-        { "title": "Point to the Worker", "description": "Ask Vetta to write or review the Worker and its Wrangler configuration." },
+        { "title": "Point to the Worker", "description": "Ask Youth to write or review the Worker and its Wrangler configuration." },
         { "title": "State the production context", "description": "Share expected traffic, data dependencies, latency and failure requirements." },
         { "title": "Apply verified fixes", "description": "Review prioritized findings, update the code and run the project's relevant tests before deployment." }
       ]

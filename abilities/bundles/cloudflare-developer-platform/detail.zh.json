@@ -3,16 +3,16 @@
   "blocks": [
     {
       "type": "hero",
-      "eyebrow": "在 Vetta 中使用 CLOUDFLARE",
+      "eyebrow": "在 Youth 中使用 CLOUDFLARE",
       "title": "依据最新官方资料，开发并运维 Cloudflare 项目",
-      "description": "一个可按需选择的组合包：让 Vetta 获得 Cloudflare 平台知识、项目级 Wrangler 实践、实时文档，以及可选的账号操作能力。",
+      "description": "一个可按需选择的组合包：让 Youth 获得 Cloudflare 平台知识、项目级 Wrangler 实践、实时文档，以及可选的账号操作能力。",
       "badges": ["Workers", "Wrangler", "实时文档", "可选账号授权"]
     },
     {
       "type": "showcase",
       "showcase": {
         "template": "chat-thread",
-        "brand_name": "Vetta",
+        "brand_name": "Youth",
         "user_prompt": "审查这个 Worker，添加合适的存储绑定，在本地验证，并准备一份安全的部署方案。",
         "assistant_reply": "我会检查项目、核对最新 Cloudflare 文档、应用 Workers 最佳实践，并在执行部署或账号变更前请你确认。"
       }
@@ -52,7 +52,7 @@
         },
         {
           "title": "说明目标和操作边界",
-          "description": "打开项目，告诉 Vetta 要开发、审查或查询什么；若允许修改线上资源，请在执行前明确说明。"
+          "description": "打开项目，告诉 Youth 要开发、审查或查询什么；若允许修改线上资源，请在执行前明确说明。"
         }
       ]
     },

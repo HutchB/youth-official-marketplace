@@ -81,7 +81,7 @@
         },
         {
           "title": "Install and enable Build Apple Apps",
-          "description": "Approve the requested permissions. The plugin runs the open-source serve-sim preview through Vetta's built-in Node runtime, on a local port only — nothing else to install."
+          "description": "Approve the requested permissions. The plugin runs the open-source serve-sim preview through Youth's built-in Node runtime, on a local port only — nothing else to install."
         },
         {
           "title": "Open an Xcode or SwiftPM project",
@@ -92,7 +92,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "content": "With Xcode 27, typing into the simulator from the panel needs the simulator window visible in Device Hub, and Vetta allowed under System Settings → Privacy & Security → Accessibility. Taps and swipes work without it."
+      "content": "With Xcode 27, typing into the simulator from the panel needs the simulator window visible in Device Hub, and Youth allowed under System Settings → Privacy & Security → Accessibility. Taps and swipes work without it."
     }
   ]
 }

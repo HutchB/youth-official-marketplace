@@ -47,7 +47,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "content": "The game state lives only in the running app and resets when Vetta restarts or the plugin reloads. The bell plays a short sound."
+      "content": "The game state lives only in the running app and resets when Youth restarts or the plugin reloads. The bell plays a short sound."
     }
   ]
 }

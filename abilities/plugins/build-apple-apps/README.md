@@ -20,7 +20,7 @@ Node 运行时，用户无需另装任何东西。不注册 Agent 工具，Skill
 
 - Apple Silicon Mac 与 Xcode（含模拟器运行时）；serve-sim 的辅助程序只提供 arm64 版本
 - 首次启动从 npm 下载 serve-sim（约 5 MB）；没有已启动的模拟器时它会自动启动一台
-- Xcode 27 上键盘输入需要 Device Hub 中的模拟器窗口可见，并在「隐私与安全性 → 辅助功能」中允许 Vetta
+- Xcode 27 上键盘输入需要 Device Hub 中的模拟器窗口可见，并在「隐私与安全性 → 辅助功能」中允许 Youth
 - 服务端口由宿主分配，插件停用或退出 App 时回收
 
 键盘诊断：serve-sim 以 `NSUnbufferedIO=YES` 启动，插件运行期间读取它的输出；出现
@@ -37,8 +37,8 @@ npm install
 npm run check
 npm test
 npm run build            # 本地预检；dist/ 与 release/ 不提交
-npm run install:vetta    # 打包并安装到正在运行的 Vetta
+npm run install:vetta    # 打包并安装到正在运行的 Youth
 ```
 
-来源：自 Vetta 0.5.60 起从 OpenVetta 系统插件（`packages/plugins/presets/build-apple-apps`）迁出，插件 id 保持不变，
+来源：自 Youth 0.5.60 起从主程序系统内置插件（`packages/plugins/presets/build-apple-apps`）迁出，插件 id 保持不变，
 已有用户重新安装后沿用原来的插件存储。

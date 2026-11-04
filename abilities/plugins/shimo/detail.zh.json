@@ -4,7 +4,7 @@
     {
       "type": "hero",
       "title": "为主动学习而设计的安静阅读器",
-      "description": "复制导入 PDF、Markdown 或 TXT，选择 Vetta 已配置的模型，划选内容后无需离开阅读器即可提问。",
+      "description": "复制导入 PDF、Markdown 或 TXT，选择 Youth 已配置的模型，划选内容后无需离开阅读器即可提问。",
       "badges": [
         "私有副本",
         "记录可离线",

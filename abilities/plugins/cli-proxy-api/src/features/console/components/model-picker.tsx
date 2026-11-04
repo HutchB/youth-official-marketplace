@@ -10,7 +10,7 @@ import { type ModelGroupState } from "../../../domain/model-group-state";
 import { ModelGroup } from "./model-group";
 
 /**
- * Chooses what the gateway publishes into Vetta.
+ * Chooses what the gateway publishes into Youth.
  *
  * Grouped by supplier because credentials are a routing pool. Account cards
  * remain the health surface; this picker controls each effective route once.

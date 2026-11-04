@@ -81,7 +81,7 @@
         },
         {
           "title": "安装并启用「构建 Apple App」",
-          "description": "按提示授予所需权限。插件通过 Vetta 自带的 Node 运行时启动开源的 serve-sim 预览服务，只监听本机端口，无需另外安装任何东西。"
+          "description": "按提示授予所需权限。插件通过 Youth 自带的 Node 运行时启动开源的 serve-sim 预览服务，只监听本机端口，无需另外安装任何东西。"
         },
         {
           "title": "打开 Xcode 或 SwiftPM 工程",
@@ -92,7 +92,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "content": "在 Xcode 27 上，从面板向模拟器输入文字需要 Device Hub 中的模拟器窗口可见，并在「系统设置 → 隐私与安全性 → 辅助功能」中允许 Vetta。点击和滑动不受影响。"
+      "content": "在 Xcode 27 上，从面板向模拟器输入文字需要 Device Hub 中的模拟器窗口可见，并在「系统设置 → 隐私与安全性 → 辅助功能」中允许 Youth。点击和滑动不受影响。"
     }
   ]
 }
