@@ -5,3 +5,14 @@
 .tooling/
 abilities/plugins/*/dist/
 abilities/plugins/*/release/
+
+# IDE 本地配置
+.idea/
+.vscode/
+
+# 插件本地 npm install 产生的依赖目录（见 abilities/plugins/<slug>/ 内的插件工程）
+node_modules/
+
+# scripts/ 下 Python 发布与测试脚本的本地缓存
+__pycache__/
+*.pyc
