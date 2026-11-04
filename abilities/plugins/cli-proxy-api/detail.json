@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Managed local model gateway",
+      "title": "Use subscription-backed models through one local endpoint",
+      "description": "Connect your existing model subscriptions, choose their models for conversations in Youth, and view account health and quota in one place.",
+      "badges": [
+        "Pinned releases",
+        "Loopback only",
+        "OAuth providers"
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "content": "This is a third-party integration. Provider terms, regional rules and account policies still apply. You explicitly start each OAuth flow; Youth does not import browser cookies or credentials from other CLIs."
+    },
+    {
+      "type": "feature-grid",
+      "items": [
+        {
+          "icon": "solar:shield-check-bold",
+          "title": "Upgradeable without a fork",
+          "description": "The marketplace pins CLIProxyAPI 8.0.52 and Gemini provider 1.0.5 by release URL and SHA-256. A plugin patch can move both locks after review, without a Desktop code change."
+        },
+        {
+          "icon": "solar:login-3-bold",
+          "title": "Nine account sign-in options",
+          "description": "Connect Gemini CLI, Codex, Claude Code, Antigravity and Devin in your browser; use device codes for Kimi Code (kimi.com), xAI, Meta Muse Code and Kimi Code (kimi.ai). A provider account and model access are required."
+        },
+        {
+          "icon": "solar:server-minimalistic-bold",
+          "title": "One model list per supplier",
+          "description": "Accounts from the same supplier form one routing pool. Each model and protocol route appears once, while every enabled account remains available for balancing and failover."
+        },
+        {
+          "icon": "solar:gallery-add-bold",
+          "title": "OpenAI and Google image models",
+          "description": "Image-capable OpenAI, Google and Antigravity routes appear as individual image models. Requests use the matching Images or generateContent adapter for text-to-image and supported image-to-image work."
+        },
+        {
+          "icon": "solar:chart-square-bold",
+          "title": "Health at a glance",
+          "description": "See request history, reported quota and cooldowns per account, and refresh credentials when needed. Model lists show upstream input and search capabilities; availability depends on your account and Youth support."
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": "Install and enable",
+          "description": "The plugin downloads the two pinned assets for your OS and architecture; Youth verifies SHA-256 again and starts the service on a dynamic loopback port."
+        },
+        {
+          "title": "Connect accounts",
+          "description": "Open the CPA setup page from the sidebar and authorize a provider. Add another account at any time, or remove the old local credential before authorizing its replacement. Runtime upgrades retain connected accounts."
+        },
+        {
+          "title": "Sync models",
+          "description": "Select the models you want to use in Youth and apply. Image generation models appear in image model settings. Your selections survive restarts."
+        },
+        {
+          "title": "Run it from the CPA setup page",
+          "description": "The CPA setup page in the sidebar lays every credential out as a card: its recent success and failure counts, a per-window health strip, and switches to disable, clear quota state or remove it."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "content": "Quota appears only when the provider supplies it; clearing local cooldowns does not increase your provider allowance. Image input in chat requires a supporting Youth version. Audio, video and native search labels describe upstream capabilities, not available Youth inputs or search tools. See the technical documentation for advanced configuration."
+    }
+  ]
+}

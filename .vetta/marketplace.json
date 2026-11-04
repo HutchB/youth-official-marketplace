@@ -1,0 +1,832 @@
+{
+  "schemaVersion": 3,
+  "name": "vetta-official-marketplace",
+  "displayName": "Youth Official Marketplace",
+  "repository": "https://github.com/HutchB/youth-official-marketplace",
+  "minAppVersion": "0.5.59",
+  "abilities": [
+    {
+      "type": "plugin",
+      "slug": "feishu",
+      "name": "Feishu",
+      "description": "Use the official lark-cli and its built-in skills for Feishu documents, messages, calendars, Base, tasks and more.",
+      "version": "1.0.5",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth / Lark Suite",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "feishu",
+        "lark",
+        "documents",
+        "calendar",
+        "base",
+        "tasks"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "飞书",
+            "description": "使用官方 lark-cli 及其内置 Skills 处理飞书文档、消息、日历、多维表格、任务等内容。",
+            "tags": [
+              "飞书",
+              "文档",
+              "日历",
+              "多维表格",
+              "任务"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/feishu"
+      },
+      "releases": [
+        {
+          "version": "1.0.5",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.ability-detail",
+            "shell.openExternal",
+            "agent.skills.control"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-feishu/feishu-1.0.5.vettapkg",
+            "sha256": "be7386409d15982c01a4be065350e3e02536c2f4efca4dd32be969ea7d21366d"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "cli-proxy-api",
+      "name": "CLIProxyAPI",
+      "description": "Run a managed local gateway for Gemini CLI, Codex, Claude, Antigravity, Kimi and xAI accounts, then use its models in Youth.",
+      "version": "1.11.2",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth / Router For Me",
+      "category": "Development",
+      "categoryI18n": {
+        "zh": "开发",
+        "en": "Development"
+      },
+      "tags": [
+        "models",
+        "oauth",
+        "gateway",
+        "gemini",
+        "codex",
+        "claude"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "CLIProxyAPI",
+            "description": "运行受管的本地模型网关，连接 Gemini CLI、Codex、Claude、Antigravity、Kimi 与 xAI 账号，并在 Youth 中使用动态发现的模型。",
+            "tags": [
+              "模型",
+              "OAuth",
+              "网关",
+              "Gemini",
+              "Codex",
+              "Claude"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/cli-proxy-api"
+      },
+      "releases": [
+        {
+          "version": "1.11.2",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.4.0",
+          "permissions": [
+            "ui.slot.ability-detail",
+            "ui.slot.workspace-view",
+            "storage.read",
+            "storage.write",
+            "shell.openExternal",
+            "models.manage",
+            "media.provider.register",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-cli-proxy-api/cli-proxy-api-1.11.2.vettapkg",
+            "sha256": "dde63f7c2ea6288c9be020fc24b34dd01ed0edfd46daa832b76ca6a8abdc6ed8"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mcp",
+      "slug": "notion",
+      "name": "Notion",
+      "description": "Connect a Notion workspace with browser authorization, then search, read, create and update pages directly from Youth.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "author": "Notion",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "notion",
+        "notes",
+        "wiki",
+        "knowledge-base",
+        "oauth"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Notion",
+            "description": "通过浏览器授权连接 Notion 工作区，之后可直接让 Youth 搜索、读取、新建和更新页面。",
+            "tags": [
+              "Notion",
+              "笔记",
+              "知识库",
+              "工作区",
+              "授权"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/mcp/notion"
+      }
+    },
+    {
+      "type": "mcp",
+      "slug": "baizhi-agent-toolkit",
+      "name": "Baizhi Agent Toolkit",
+      "description": "Connect your Baizhi Cloud account to use the agent tools available to your key in Youth, including web research and page extraction.",
+      "version": "1.0.1",
+      "configVersion": 1,
+      "author": "Youth / Baizhi Cloud / @ct-jaryn",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "baizhi",
+        "agent-tools",
+        "web-search",
+        "page-extraction",
+        "remote-mcp"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "百智云 Agent Toolkit",
+            "description": "用自己的百智云账号在 Youth 中使用该密钥可访问的 Agent 工具，包括网页搜索与页面提取。",
+            "tags": [
+              "百智云",
+              "Agent 工具",
+              "网页搜索",
+              "页面提取",
+              "远端 MCP"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/mcp/baizhi-agent-toolkit"
+      }
+    },
+    {
+      "type": "bundle",
+      "slug": "shimo",
+      "name": "Shimo",
+      "description": "An immersive bilingual reading workspace for books, poetry and study notes in Youth, with Shimo reading Skills shipped inside the reader plugin.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Education",
+      "categoryI18n": {
+        "zh": "学习",
+        "en": "Education"
+      },
+      "tags": [
+        "reading",
+        "poetry",
+        "pdf",
+        "pinyin",
+        "notes",
+        "bilingual"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "拾墨",
+            "description": "在 Youth 中沉浸式阅读书籍与诗歌，划选内容即可提问、解析、标注拼音并保存阅读记录。",
+            "tags": [
+              "阅读",
+              "诗歌",
+              "PDF",
+              "拼音",
+              "笔记",
+              "中英文"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/bundles/shimo"
+      },
+      "config": {
+        "members": [
+          {
+            "type": "plugin",
+            "slug": "shimo-reader",
+            "source": {
+              "path": "abilities/plugins/shimo"
+            },
+            "version": "1.0.24",
+            "releases": [
+              {
+                "version": "1.0.24",
+                "minAppVersion": "0.5.59",
+                "pluginApiVersion": "^2.1.0",
+                "permissions": [
+                  "ui.slot.workspace-view",
+                  "ui.slot.activity-tab",
+                  "ui.file-explorer.context-menu",
+                  "agent.skills.control",
+                  "fs.write",
+                  "storage.read",
+                  "storage.write",
+                  "ai.models.list",
+                  "ai.complete",
+                  "ai.ocr.recognize"
+                ],
+                "commands": [],
+                "artifact": {
+                  "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-shimo-reader/shimo-reader-1.0.24.vettapkg",
+                  "sha256": "d8bef87b909ca5fd5214fbee68919e2e00919e14c994aec7a1032dcdfd321015"
+                }
+              }
+            ]
+          },
+          {
+            "type": "skill",
+            "slug": "pdf",
+            "source": {
+              "path": "abilities/skills/pdf"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bundle",
+      "slug": "cloudflare-developer-platform",
+      "name": "Cloudflare Developer Platform",
+      "description": "Build, review, deploy and operate Cloudflare projects with official guidance, live documentation and optional account access.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "license": "Apache-2.0",
+      "author": "Cloudflare / Youth",
+      "category": "Development",
+      "categoryI18n": {
+        "zh": "开发",
+        "en": "Development"
+      },
+      "tags": [
+        "cloudflare",
+        "workers",
+        "wrangler",
+        "documentation",
+        "api"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Cloudflare 开发平台",
+            "description": "把官方平台知识、Wrangler 实践、Workers 审查、实时文档和可选账号授权组合起来，用 Youth 开发并运维 Cloudflare 项目。",
+            "tags": [
+              "Cloudflare",
+              "Workers",
+              "Wrangler",
+              "开发文档",
+              "账号操作"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/bundles/cloudflare-developer-platform"
+      },
+      "config": {
+        "members": [
+          {
+            "type": "skill",
+            "slug": "cloudflare",
+            "source": {
+              "path": "abilities/skills/cloudflare"
+            }
+          },
+          {
+            "type": "skill",
+            "slug": "wrangler",
+            "source": {
+              "path": "abilities/skills/wrangler"
+            }
+          },
+          {
+            "type": "skill",
+            "slug": "workers-best-practices",
+            "source": {
+              "path": "abilities/skills/workers-best-practices"
+            }
+          },
+          {
+            "type": "mcp",
+            "slug": "cloudflare-docs",
+            "source": {
+              "path": "abilities/mcp/cloudflare-docs"
+            }
+          },
+          {
+            "type": "mcp",
+            "slug": "cloudflare-api",
+            "source": {
+              "path": "abilities/mcp/cloudflare-api"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "skill",
+      "slug": "xlsx",
+      "name": "Spreadsheet Toolkit",
+      "description": "Create, read, analyze, edit, repair and validate spreadsheets (.xlsx/.xlsm/.csv/.tsv) without format loss, with first-class Chinese/CJK support.",
+      "version": "2.0.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "category": "Documents",
+      "categoryI18n": {
+        "zh": "文档",
+        "en": "Documents"
+      },
+      "tags": [
+        "spreadsheet",
+        "excel",
+        "csv",
+        "data"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "表格工具箱",
+            "description": "创建、读取、分析、编辑与修复表格文件，保留透视表、宏、图表与格式，中文场景一等支持。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/skills/xlsx"
+      }
+    },
+    {
+      "type": "skill",
+      "slug": "docx",
+      "name": "Word Document Toolkit",
+      "description": "Create, edit, fill, reformat and convert Word documents with zero format loss via an OpenXML-level Python toolchain.",
+      "version": "2.0.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "category": "Documents",
+      "categoryI18n": {
+        "zh": "文档",
+        "en": "Documents"
+      },
+      "tags": [
+        "word",
+        "docx",
+        "document",
+        "template"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Word 文档工具箱",
+            "description": "在 OpenXML 层原地编辑 Word 文档，样式、页眉页脚、编号与修订原样保留，支持中文公文排版。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/skills/docx"
+      }
+    },
+    {
+      "type": "skill",
+      "slug": "pdf",
+      "name": "PDF Toolkit",
+      "description": "Read, create and review PDFs where layout matters, verifying output by rendering pages instead of trusting the text layer.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "license": "Apache-2.0",
+      "category": "Documents",
+      "categoryI18n": {
+        "zh": "文档",
+        "en": "Documents"
+      },
+      "tags": [
+        "pdf",
+        "document",
+        "render"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "PDF 工具箱",
+            "description": "读取、生成与审阅 PDF，通过渲染页面确认最终版式，而不是只看文本抽取结果。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/skills/pdf"
+      }
+    },
+    {
+      "type": "skill",
+      "slug": "remotion-best-practices",
+      "name": "Remotion Best Practices",
+      "description": "Domain knowledge for building videos programmatically with Remotion: animation, sequencing, captions, audio, dynamic duration and rendering.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "category": "Development",
+      "categoryI18n": {
+        "zh": "开发",
+        "en": "Development"
+      },
+      "tags": [
+        "remotion",
+        "video",
+        "react",
+        "animation"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Remotion 最佳实践",
+            "description": "用 React/TypeScript 编写视频的领域知识：动画、镜头编排、字幕、音频、动态时长与渲染。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/skills/remotion-best-practices"
+      }
+    },
+    {
+      "type": "plugin",
+      "slug": "xiaohongshu",
+      "name": "Xiaohongshu Accounts",
+      "description": "Manage multiple Xiaohongshu accounts and run built-in MCP tasks concurrently through the account selected for each task.",
+      "version": "1.1.23",
+      "configVersion": 1,
+      "license": "Apache-2.0",
+      "author": "Youth / xpzouying",
+      "category": "Social",
+      "categoryI18n": {
+        "zh": "社交",
+        "en": "Social"
+      },
+      "tags": [
+        "xiaohongshu",
+        "rednote",
+        "social",
+        "content",
+        "automation"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "小红书账号",
+            "description": "在 Youth 中管理多个小红书账号，Agent 可自动选择账号并同时执行内置 MCP 任务。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/xiaohongshu"
+      },
+      "releases": [
+        {
+          "version": "1.1.23",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "agent.mcp.control",
+            "ui.slot.ability-detail",
+            "ui.slot.workspace-view",
+            "storage.read",
+            "storage.write",
+            "secrets.read",
+            "secrets.write",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-xiaohongshu/xiaohongshu-1.1.23.vettapkg",
+            "sha256": "5dc08c5f8d11bd684009a9f74ad7ed872b3e79e3fcd685d75c6e631603d793f5"
+          }
+        }
+      ]
+    },
+    {
+      "type": "mcp",
+      "slug": "x-api-mcp",
+      "name": "X API",
+      "description": "Search X posts, users, trends and news through the official hosted X API MCP server.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "author": "X Developer Platform",
+      "category": "Social",
+      "categoryI18n": {
+        "zh": "社交",
+        "en": "Social"
+      },
+      "tags": [
+        "x",
+        "twitter",
+        "social",
+        "search",
+        "news",
+        "api"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "X API",
+            "description": "通过官方托管的 X API MCP 服务搜索帖子、用户、趋势和新闻。"
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/mcp/x-api-mcp"
+      }
+    },
+    {
+      "type": "bundle",
+      "slug": "zhihu-research",
+      "name": "Zhihu Research",
+      "description": "Ask Youth to research Zhihu experiences and current discussions, compare viewpoints and return source links.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "author": "Youth / Klarkxy",
+      "category": "Social",
+      "categoryI18n": {
+        "zh": "社交",
+        "en": "Social"
+      },
+      "tags": [
+        "zhihu",
+        "research",
+        "search",
+        "chinese-community"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "知乎调研",
+            "description": "让 Youth 帮你调研知乎口碑与热点讨论，整理不同观点，并附上可核查的来源链接。",
+            "tags": [
+              "知乎",
+              "调研",
+              "搜索",
+              "中文社区"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/bundles/zhihu-research"
+      },
+      "config": {
+        "members": [
+          {
+            "type": "skill",
+            "slug": "zhihu-search",
+            "source": {
+              "path": "abilities/skills/zhihu-search"
+            }
+          },
+          {
+            "type": "mcp",
+            "slug": "zhihu-search-mcp",
+            "source": {
+              "path": "abilities/mcp/zhihu-search-mcp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "plugin",
+      "slug": "vetta-tihu",
+      "name": "Pelican Ride",
+      "description": "A bicycle-riding pelican mini game in the activity panel. Chat with the AI to change its speed, make it jump, ring the bell or switch between day, dusk, night and rain.",
+      "version": "0.3.1",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Entertainment",
+      "categoryI18n": {
+        "zh": "娱乐",
+        "en": "Entertainment"
+      },
+      "tags": [
+        "game",
+        "pelican",
+        "animation",
+        "fun"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "鹈鹕骑车",
+            "description": "活动面板里骑自行车的鹈鹕小游戏。和 AI 对话即可调速度、让它跳跃、按铃铛，或切换白天、黄昏、天黑与下雨场景。",
+            "tags": [
+              "游戏",
+              "鹈鹕",
+              "动画",
+              "趣味"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/vetta-tihu"
+      },
+      "releases": [
+        {
+          "version": "0.3.1",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.activity-tab",
+            "agent.tools.register",
+            "agent.toolHandler.execute"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-vetta-tihu/vetta-tihu-0.3.1.vettapkg",
+            "sha256": "5b15fe541f8a5a08c458b862c6ac284b42ec50c3a6b8d7bcac5feb14eee294f1"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "build-apple-apps",
+      "name": "Build Apple Apps",
+      "description": "Bring a live iOS Simulator into the activity panel so the AI can build, install and launch your app while you watch and use it, with a built-in SwiftUI development guide.",
+      "version": "0.3.2",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Development",
+      "categoryI18n": {
+        "zh": "开发",
+        "en": "Development"
+      },
+      "tags": [
+        "ios",
+        "swiftui",
+        "xcode",
+        "simulator",
+        "apple"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "构建 Apple App",
+            "description": "把实时的 iOS 模拟器放进活动面板，AI 构建、安装、启动你的 App，你可以实时查看和操作，内置 SwiftUI 开发指南。",
+            "tags": [
+              "iOS",
+              "SwiftUI",
+              "Xcode",
+              "模拟器",
+              "Apple"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/build-apple-apps"
+      },
+      "releases": [
+        {
+          "version": "0.3.2",
+          "minAppVersion": "0.5.60",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.activity-tab",
+            "ui.slot.workspace-view",
+            "agent.command.spawn",
+            "agent.skills.control",
+            "agent.session.read",
+            "fs.read",
+            "storage.read",
+            "storage.write",
+            "shell.openExternal"
+          ],
+          "commands": [
+            "npx"
+          ],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-build-apple-apps/build-apple-apps-0.3.2.vettapkg",
+            "sha256": "1f2f845789f53097bf48a96bd6aaaeaab2b8894361e0e26f0af9bccf02f9ff73"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "rea",
+      "name": "REA",
+      "description": "Investigate how any app, binary, website or package works, with every finding kept on a case that cites its evidence.",
+      "version": "1.0.1",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth / REA",
+      "category": "Development",
+      "categoryI18n": {
+        "zh": "开发",
+        "en": "Development"
+      },
+      "tags": [
+        "reverse-engineering",
+        "app-analysis",
+        "binary",
+        "electron",
+        "apk",
+        "evidence"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "REA",
+            "description": "本机逆向任何应用、二进制、网站或资源包，每条结论连同证据留在案件里。",
+            "tags": [
+              "逆向",
+              "应用分析",
+              "二进制",
+              "Electron",
+              "APK",
+              "证据"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/rea"
+      },
+      "releases": [
+        {
+          "version": "1.0.1",
+          "minAppVersion": "0.5.60",
+          "pluginApiVersion": "^2.4.0",
+          "permissions": [
+            "ui.file-explorer.context-menu",
+            "agent.mcp.control",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "agent.hooks.register",
+            "agent.hookHandler.execute",
+            "agent.skills.control",
+            "agent.command.run",
+            "agent.session.write",
+            "storage.read",
+            "storage.write",
+            "fs.read"
+          ],
+          "commands": [
+            "node",
+            "npm",
+            "java",
+            "rea"
+          ],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-rea/rea-1.0.1.vettapkg",
+            "sha256": "a0d732cb4f05f5ff0dd0d5bb1f99dcbab316dbb9623cac90b0578e8a973a1bbf"
+          }
+        }
+      ]
+    }
+  ],
+  "marketplaceVersion": "2026.11.04-1"
+}

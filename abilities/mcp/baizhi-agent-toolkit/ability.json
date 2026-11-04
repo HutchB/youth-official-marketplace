@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "type": "mcp",
+  "slug": "baizhi-agent-toolkit",
+  "version": "1.0.1",
+  "icon": "assets/icon.png",
+  "detail": {
+    "format": "blocks",
+    "path": "detail.json",
+    "meta": [
+      {
+        "label": "Author",
+        "value": "Youth / Baizhi Cloud / @ct-jaryn"
+      },
+      {
+        "key": "homepage",
+        "value": "https://baizhi.cloud/landing/agent-toolkit"
+      },
+      {
+        "key": "repository",
+        "value": "https://github.com/chaitin/baizhi-agent-toolkit"
+      }
+    ],
+    "i18n": {
+      "zh": {
+        "path": "detail.zh.json",
+        "meta": [
+          {
+            "label": "作者",
+            "value": "Youth / 百智云（长亭科技）/ @ct-jaryn"
+          },
+          {
+            "key": "homepage",
+            "value": "https://baizhi.cloud/landing/agent-toolkit"
+          },
+          {
+            "key": "repository",
+            "value": "https://github.com/chaitin/baizhi-agent-toolkit"
+          }
+        ]
+      }
+    }
+  }
+}
