@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "type": "plugin",
   "slug": "rea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "assets/icon.png",
   "name": "REA",
   "description": "Investigate how any app, binary, website or package works, with every finding kept on a case that cites its evidence.",

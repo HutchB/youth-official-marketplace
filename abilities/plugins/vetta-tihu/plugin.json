@@ -1,7 +1,7 @@
 {
   "id": "vetta-tihu",
   "name": "%name%",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "pluginApiVersion": "^2.0.0",
   "entry": "dist/mf-manifest.json",
   "moduleFederation": {
