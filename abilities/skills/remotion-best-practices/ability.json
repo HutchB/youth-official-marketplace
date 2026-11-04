@@ -3,7 +3,7 @@
   "type": "skill",
   "slug": "remotion-best-practices",
   "version": "1.0.0",
-  "icon": "solar:videocamera-record-bold",
+  "icon": "assets/icon.svg",
   "detail": {
     "format": "blocks",
     "path": "detail.json",

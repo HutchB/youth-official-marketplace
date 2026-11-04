@@ -636,7 +636,7 @@
       "slug": "build-apple-apps",
       "name": "Build Apple Apps",
       "description": "Bring a live iOS Simulator into the activity panel so the AI can build, install and launch your app while you watch and use it, with a built-in SwiftUI development guide.",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",

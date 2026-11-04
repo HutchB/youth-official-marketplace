@@ -798,3 +798,33 @@ test("display content carries no Vetta brand remnants in any language", () => {
   }
   assert.deepEqual(offenders, []);
 });
+
+test("declared icon files ship valid image signatures", () => {
+  const signatures = { png: [0x89, 0x50, 0x4e, 0x47], ico: [0x00, 0x00, 0x01, 0x00], jpg: [0xff, 0xd8], gif: [0x47, 0x49, 0x46] };
+  const entries = catalog.abilities.flatMap((ability) => [
+    ability,
+    ...(ability.type === "bundle" ? ability.config.members.filter((member) => member.source) : []),
+  ]);
+  const offenders = [];
+  const seen = new Set();
+  for (const entry of entries) {
+    const directory = resolve(root, entry.source.path);
+    const descriptor = readJson(resolve(directory, "ability.json"));
+    const icon = descriptor.icon;
+    if (!icon || icon.includes("://") || icon.startsWith("solar:") || icon.startsWith("data:")) continue;
+    const file = resolve(directory, icon);
+    if (seen.has(file)) continue;
+    seen.add(file);
+    if (!existsSync(file)) { offenders.push(`missing: ${icon} (${entry.slug})`); continue; }
+    const bytes = readFileSync(file);
+    const extension = icon.split(".").pop().toLowerCase();
+    if (extension === "svg") {
+      if (!bytes.toString("utf8", 0, 5).trimStart().startsWith("<")) offenders.push(`invalid svg signature: ${icon} (${entry.slug})`);
+      continue;
+    }
+    const expected = signatures[extension];
+    if (!expected) continue;
+    if (!expected.every((byte, index) => bytes[index] === byte)) offenders.push(`corrupted image signature: ${icon} (${entry.slug})`);
+  }
+  assert.deepEqual(offenders, []);
+});
