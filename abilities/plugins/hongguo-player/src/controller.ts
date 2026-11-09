@@ -50,7 +50,9 @@ export function createHongguoController(
 	ctx: PluginContext,
 	options: { platform?: string } = {},
 ): HongguoController {
-	const platform = options.platform ?? detectPluginPlatform();
+	// 平台判定优先级：测试注入 > 宿主上报（ctx.env.platform）> 环境嗅探。
+	// 真实宿主上后两者恒等；CI 在 linux 上跑 Windows 合同测试时以宿主上报为准。
+	const platform = options.platform ?? ctx.env.platform ?? detectPluginPlatform();
 	// null = 无法判定：放行，由原语调用失败兜底；仅显式非 Windows 平台才拒绝。
 	const isWindows = platform === null || platform === "win32";
 	let pluginRoot: string | null = null;
