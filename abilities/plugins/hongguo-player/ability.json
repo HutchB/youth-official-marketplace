@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"type": "plugin",
 	"slug": "hongguo-player",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"icon": "assets/icon.png",
 	"name": "Hongguo Short Drama",
 	"description": "Watch Hongguo short dramas in a Youth-managed vertical player: open it by chat, autoplay episodes, search and browse rankings, clean cache and manage local data.",

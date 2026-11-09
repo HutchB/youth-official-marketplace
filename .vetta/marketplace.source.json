@@ -720,7 +720,7 @@
       "slug": "hongguo-player",
       "name": "Hongguo Short Drama",
       "description": "Watch Hongguo short dramas in a Youth-managed vertical player: open it by chat, autoplay episodes, search and browse rankings, clean cache and manage local data.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",

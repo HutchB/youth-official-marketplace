@@ -1,6 +1,8 @@
 {
 	"plugin.name": "红果短剧",
 	"plugin.description": "在 Youth 里启动和管理红果短剧播放器：一键打开刷剧、AI 对话控制启停、缓存清理与数据管理。",
+	"plugin.skillName": "红果短剧操作",
+	"plugin.skillDescription": "在对话里打开或关闭红果短剧播放器、查看运行状态、清理缓存或重置本地数据。",
 	"view.console.label": "红果短剧",
 	"view.console.description": "红果短剧播放器：启动/停止、缓存与数据管理",
 	"tool.launch.label": "打开红果短剧",

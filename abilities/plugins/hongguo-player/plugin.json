@@ -1,7 +1,7 @@
 {
 	"id": "hongguo-player",
 	"name": "%plugin.name%",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "%plugin.description%",
 	"defaultLocale": "zh",
 	"pluginApiVersion": "^2.11.0",
@@ -38,8 +38,8 @@
 			"skills": {
 				"hongguo-player": {
 					"defaultVisibility": "visible",
-					"displayName": "%plugin.name%",
-					"displayDescription": "%plugin.description%"
+					"displayName": "%plugin.skillName%",
+					"displayDescription": "%plugin.skillDescription%"
 				}
 			}
 		}

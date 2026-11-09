@@ -1,6 +1,8 @@
 {
 	"plugin.name": "Hongguo Short Drama",
 	"plugin.description": "Launch and manage the Hongguo short-drama player inside Youth: one-click playback, AI chat control, cache and data management.",
+	"plugin.skillName": "Hongguo player control",
+	"plugin.skillDescription": "Open or close the Hongguo player from chat, check its running state, clean the cache or reset local data.",
 	"view.console.label": "Hongguo Drama",
 	"view.console.description": "Hongguo player: start/stop, cache & data management",
 	"tool.launch.label": "Open Hongguo player",
