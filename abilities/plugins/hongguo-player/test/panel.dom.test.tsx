@@ -103,6 +103,14 @@ describe("HongguoPanel", () => {
 		expect(controller.cleanCache).not.toHaveBeenCalled();
 	});
 
+	it("shows the resolved data folder instead of the %APPDATA% literal", async () => {
+		render(<HongguoPanel controller={createController()} />);
+
+		// 文案曾写死「%APPDATA%/hgplayer」，用户看到的是占位符而不是真实目录。
+		expect(await screen.findByText(/C:\\Users\\u\\AppData\\Roaming\\hgplayer/)).toBeTruthy();
+		expect(document.body.textContent).not.toMatch(/%APPDATA%/);
+	});
+
 	it("deep-cleans only after the user confirms the dialog", async () => {
 		const controller = createController();
 		render(<HongguoPanel controller={controller} />);

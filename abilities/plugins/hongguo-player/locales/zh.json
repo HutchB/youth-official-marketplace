@@ -50,9 +50,10 @@
 	"panel.statState": "播放器状态",
 	"panel.statVersion": "播放器版本",
 	"panel.statCache": "缓存占用",
-	"panel.dataDirHint": "数据目录 %APPDATA%/hgplayer（卸载插件不影响播放器数据）",
+	"panel.dataDirHint": "数据目录 {{path}}（卸载插件不影响播放器数据）",
 	"panel.note1": "首次启动如系统缺少 WebView2 运行时或 HEVC 视频扩展，播放器会自动安装（需联网）；装不上时会自动用软件解码（CPU 占用略高）。",
 	"panel.note2": "播放器未购买代码签名证书，部分杀毒软件可能误报：请将插件安装目录加入信任白名单；若提示无法连接本地播放服务，请在防火墙中放行。",
 	"panel.note3": "播放器本体由插件自动托管：缺失时从官方发布源下载（Youth R2 加速），版本更新自动跟进。",
-	"panel.note4": "红果短剧播放器为第三方非官方客户端（仅供学习交流），本插件仅提供启动与管理集成，与红果官方无关。"
+	"panel.note4": "红果短剧播放器为第三方非官方客户端（仅供学习交流），本插件仅提供启动与管理集成，与红果官方无关。",
+	"panel.dataDirHintUnknown": "数据目录位于用户 AppData 下（卸载插件不影响播放器数据）"
 }

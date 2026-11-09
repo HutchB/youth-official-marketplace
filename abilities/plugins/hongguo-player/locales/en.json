@@ -50,9 +50,10 @@
 	"panel.statState": "Player state",
 	"panel.statVersion": "Player version",
 	"panel.statCache": "Cache usage",
-	"panel.dataDirHint": "Data directory %APPDATA%/hgplayer (uninstalling the plugin keeps player data)",
+	"panel.dataDirHint": "Data folder {{path}} (uninstalling the plugin keeps player data)",
 	"panel.note1": "On first launch the player auto-installs WebView2 runtime / HEVC extensions if missing (requires internet); otherwise it falls back to software decoding (higher CPU).",
 	"panel.note2": "The player is unsigned and may trigger antivirus false positives: add the plugin install folder to your whitelist; allow it through the firewall if local playback fails.",
 	"panel.note3": "The player binary is fully managed by the plugin: downloaded on demand from the official release (served via Youth R2), and new versions are picked up automatically.",
-	"panel.note4": "The Hongguo player is an unofficial third-party client for personal study use. This plugin only integrates launching and management; it is not affiliated with Hongguo."
+	"panel.note4": "The Hongguo player is an unofficial third-party client for personal study use. This plugin only integrates launching and management; it is not affiliated with Hongguo.",
+	"panel.dataDirHintUnknown": "Data folder lives under your AppData (uninstalling the plugin keeps player data)"
 }

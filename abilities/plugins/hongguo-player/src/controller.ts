@@ -254,6 +254,12 @@ export function createHongguoController(
 			} catch {
 				// 首次解析失败不抛出：面板显示未就绪，动作触发时再报错。
 			}
+			try {
+				// 面板要展示真实数据目录（而不是 %APPDATA% 字面量），这里一并解析。
+				await resolveDataDir();
+			} catch {
+				// 同上：拿不到时面板显示通用文案。
+			}
 		},
 		ensureInstalled,
 		checkUpdate,

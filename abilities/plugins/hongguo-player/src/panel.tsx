@@ -25,13 +25,17 @@ export function HongguoPanel({
 	const [downloadProgress, setDownloadProgress] = useState<{ received: number; total: number } | null>(null);
 	/** 播放器版本信息（null=未安装；undefined=未查询）。 */
 	const [playerVersion, setPlayerVersion] = useState<string | null | undefined>(undefined);
+	/** 真实数据目录；解析前为 null，面板显示通用文案而不是 %APPDATA% 字面量。 */
+	const [dataDir, setDataDir] = useState<string | null>(null);
 
 	const refreshState = useCallback(async () => {
 		if (!controller) return;
 		try {
+			await controller.refresh();
 			const [isRunning, size] = await Promise.all([controller.isRunning(), controller.cacheSizeBytes()]);
 			setRunning(isRunning);
 			setCacheBytes(size);
+			setDataDir(controller.dataDir);
 			setRefreshError(null);
 		} catch (cause) {
 			setRefreshError(cause instanceof Error ? cause.message : String(cause));
@@ -245,7 +249,9 @@ export function HongguoPanel({
 							) : null}
 						</p>
 					) : (
-						<p className="text-xs text-neutral-500">{t("panel.dataDirHint")}</p>
+						<p className="text-xs text-neutral-500">
+							{dataDir ? t("panel.dataDirHint", { path: dataDir }) : t("panel.dataDirHintUnknown")}
+						</p>
 					)}
 				</div>
 				<div className="flex flex-wrap items-start gap-2.5">
