@@ -888,7 +888,71 @@
           }
         }
       ]
+    },
+    {
+      "type": "plugin",
+      "slug": "hongguo-player",
+      "name": "Hongguo Short Drama",
+      "description": "Watch Hongguo short dramas in a Youth-managed vertical player: open it by chat, autoplay episodes, search and browse rankings, clean cache and manage local data.",
+      "version": "0.1.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Entertainment",
+      "categoryI18n": {
+        "zh": "娱乐",
+        "en": "Entertainment"
+      },
+      "tags": [
+        "hongguo",
+        "short-drama",
+        "video",
+        "player",
+        "windows"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "红果短剧",
+            "description": "在 Youth 中使用托管的竖屏播放器刷红果短剧：对话即可打开、自动连播、搜索与排行榜，并支持一键清理缓存与本地数据管理。",
+            "tags": [
+              "红果",
+              "短剧",
+              "视频",
+              "播放器",
+              "追剧"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/hongguo-player"
+      },
+      "releases": [
+        {
+          "version": "0.1.0",
+          "minAppVersion": "0.5.73",
+          "pluginApiVersion": "^2.11.0",
+          "permissions": [
+            "ui.slot.workspace-view",
+            "agent.skills.control",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "system.processes.manage",
+            "shell.openPath",
+            "fs.read",
+            "fs.write",
+            "fs.managed",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-hongguo-player/hongguo-player-0.1.0.vettapkg",
+            "sha256": "b218ebcdd1e36c798b4e2b61defb736396692e38d4bdcab91a37f5661b5e4c7a"
+          }
+        }
+      ]
     }
   ],
-  "marketplaceVersion": "2026.11.04-3"
+  "marketplaceVersion": "2026.11.09-1"
 }
