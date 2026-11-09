@@ -44,7 +44,7 @@
 			}
 		}
 	},
-	"icon": "icon.png",
+	"icon": "assets/icon.png",
 	"fs": {
 		"scopes": [
 			"%APPDATA%/hgplayer",

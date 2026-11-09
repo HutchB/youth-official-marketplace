@@ -20,6 +20,7 @@ export function publicationSettings(directory) {
   for (const [version, commit] of Object.entries(settings.candidateAppCommits)) {
     if (!/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(version) || !/^[a-f0-9]{40}$/.test(commit)) throw new Error('Pin each candidate App version to a full commit');
   }
+  if (settings.appRepository !== undefined && !/^[\w.-]+\/[\w.-]+$/.test(settings.appRepository)) throw new Error('appRepository must be owner/repository of the Desktop application fork');
   return settings;
 }
 
@@ -34,6 +35,7 @@ export async function verifyCandidate(directory, tooling) {
   const { verifyMarketplacePublication } = await import(pathToFileURL(join(tooling, 'scripts/release/check-plugin-marketplace-publication.mjs')).href);
   await verifyMarketplacePublication(manifest, {
     token: process.env.GITHUB_TOKEN,
+    appRepository: settings.appRepository,
     candidateAppCommits: settings.candidateAppCommits,
     fetcher: async (url, init) => {
       const item = artifacts.get(String(url));

@@ -1,0 +1,86 @@
+{
+	"schemaVersion": 1,
+	"blocks": [
+		{
+			"type": "hero",
+			"eyebrow": "Entertainment · Short drama",
+			"title": "Binge Hongguo short dramas without leaving Youth",
+			"description": "A Youth-managed vertical player for Hongguo short dramas: immersive swipe playback, autoplay, search and rankings, with cache and data tools one conversation away. The player downloads on demand, so the install stays small.",
+			"image": "presentation/hero.png",
+			"image_alt": "Hongguo short drama player panel",
+			"layout": "split",
+			"badges": [
+				"Windows",
+				"Free",
+				"AI controlled"
+			]
+		},
+		{
+			"type": "showcase",
+			"showcase": {
+				"template": "chat-thread",
+				"brand_name": "Youth",
+				"user_prompt": "Pick an easy short drama to watch over dinner — two episodes, then clean the cache for me.",
+				"assistant_reply": "Opened Hongguo and autoplaying your show. Tell me when you're done and I'll clean this session's cache — login, favorites and history stay untouched."
+			}
+		},
+		{
+			"type": "feature-grid",
+			"title": "What you get",
+			"items": [
+				{
+					"title": "One-click launch",
+					"description": "Open it from the sidebar panel, or just say \"open Hongguo\" in a conversation — no hunting for the executable.",
+					"icon": "solar:play-circle-linear"
+				},
+				{
+					"title": "AI chat control",
+					"description": "\"Open Hongguo\", \"close Hongguo\", \"is Hongguo running\" — control playback without switching windows.",
+					"icon": "solar:chat-round-dots-linear"
+				},
+				{
+					"title": "Cache and data tools",
+					"description": "Reclaim disk with one click while login, favorites and watch history stay untouched, or erase everything for a fresh start.",
+					"icon": "solar:trash-bin-trash-linear"
+				},
+				{
+					"title": "Full playback experience",
+					"description": "Immersive vertical feed, wheel-to-switch episodes, autoplay, search and rankings, follow updates, always-on-top mini window, HEVC hardware decoding.",
+					"icon": "solar:video-library-linear"
+				}
+			]
+		},
+		{
+			"type": "steps",
+			"title": "Get started in three steps",
+			"items": [
+				{
+					"title": "Enable the ability",
+					"description": "After installing, enable it here and grant the process and filesystem permissions the launcher needs (all through audited host channels)."
+				},
+				{
+					"title": "Open the player",
+					"description": "Click Hongguo in the sidebar and hit the launch button, or just ask in a conversation."
+				},
+				{
+					"title": "Watch and manage",
+					"description": "The first launch sets up decoding components automatically; stop the player or clean the cache from the panel whenever you like."
+				}
+			]
+		},
+		{
+			"type": "callout",
+			"tone": "warning",
+			"title": "Before you start",
+			"content": "The player is an unofficial third-party client for personal study use, not affiliated with this ability or Youth. It is not code-signed, so some antivirus tools may flag it — add the install folder to your whitelist, and allow it through the firewall if local playback fails."
+		},
+		{
+			"type": "markdown",
+			"content": "The player binary is not bundled: it downloads on first launch from the plugin's release mirror (about 27 MB) and follows the version manifest for updates. Uninstalling the ability keeps your player data. For in-player actions such as logging in, searching or picking a show, the bundled Skill drives the interface through the cua-driver ability (background input with the on-screen AI banner) or host UI automation — it never grabs your mouse and keyboard."
+		},
+		{
+			"type": "markdown",
+			"content": "The Hongguo short-drama player is an unofficial third-party client for personal study use, with no affiliation to Hongguo or Youth. Player data lives in %APPDATA%\\hgplayer on this machine; uninstalling the ability does not delete it."
+		}
+	]
+}

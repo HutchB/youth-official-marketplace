@@ -3,111 +3,40 @@
 	"type": "plugin",
 	"slug": "hongguo-player",
 	"version": "0.1.0",
+	"icon": "assets/icon.png",
+	"name": "Hongguo Short Drama",
+	"description": "Watch Hongguo short dramas in a Youth-managed vertical player: open it by chat, autoplay episodes, search and browse rankings, clean cache and manage local data.",
+	"configVersion": 1,
+	"license": "MIT",
+	"author": "Youth",
+	"category": "Entertainment",
+	"categoryI18n": {
+		"zh": "娱乐",
+		"en": "Entertainment"
+	},
+	"tags": [
+		"hongguo",
+		"short-drama",
+		"video",
+		"player",
+		"windows"
+	],
 	"detail": {
-		"blocks": [
-			{
-				"type": "hero",
-				"eyebrow": "娱乐 · 短剧",
-				"title": "在 Youth 里刷红果短剧",
-				"description": "一键启动红果短剧播放器：沉浸竖屏刷剧、自动连播、搜索与排行榜、弹幕收藏历史全都有。配合 AI 对话控制启停与数据管理，娱乐与工作一套搞定。",
-				"image": "presentation/hero.png",
-				"image_alt": "红果短剧播放器界面示意",
-				"layout": "split",
-				"badges": [
-					"Windows",
-					"免费",
-					"AI 可控"
+		"format": "blocks",
+		"path": "detail.json",
+		"i18n": {
+			"zh": {
+				"path": "detail.zh.json",
+				"name": "红果短剧",
+				"description": "在 Youth 中使用托管的竖屏播放器刷红果短剧：对话即可打开、自动连播、搜索与排行榜，并支持一键清理缓存与本地数据管理。",
+				"tags": [
+					"红果",
+					"短剧",
+					"视频",
+					"播放器",
+					"追剧"
 				]
-			},
-			{
-				"type": "showcase",
-				"showcase": {
-					"template": "chat-thread",
-					"brand_name": "Youth",
-					"user_prompt": "来部下饭的短剧，先看两集，看完帮我清下缓存。",
-					"assistant_reply": "已为你打开红果短剧并连播《推荐剧名》。看完跟我说一声，我会清理本次缓存（登录和收藏不受影响）。"
-				}
-			},
-			{
-				"type": "feature-grid",
-				"title": "核心能力",
-				"items": [
-					{
-						"title": "一键启动",
-						"description": "侧栏「红果短剧」入口或对话里说一句「打开红果」即可开始刷剧，无需自己找程序。",
-						"icon": "solar:play-circle-linear"
-					},
-					{
-						"title": "AI 对话控制",
-						"description": "「打开红果」「关掉红果」「红果开着吗」自然语言直达，刷剧时不用切窗口。",
-						"icon": "solar:chat-round-dots-linear"
-					},
-					{
-						"title": "缓存与数据管理",
-						"description": "一键清理缓存释放磁盘（登录、收藏、观看记录不受影响），也可深度清除全部数据。",
-						"icon": "solar:trash-bin-trash-linear"
-					},
-					{
-						"title": "完整播放体验",
-						"description": "沉浸式竖屏、滚轮切集、自动连播、搜索排行、追更提醒、小窗置顶，HEVC 高清硬解。",
-						"icon": "solar:video-library-linear"
-					}
-				]
-			},
-			{
-				"type": "steps",
-				"title": "上手三步",
-				"items": [
-					{
-						"title": "启用插件",
-						"description": "安装后在本页启用，并授权进程管理与文件权限（启动/管理播放器所需，均为宿主审计通道）。"
-					},
-					{
-						"title": "打开播放器",
-						"description": "左侧栏点「红果短剧」进入管理页，点大按钮启动；或在对话里直接说「打开红果」。"
-					},
-					{
-						"title": "看剧与管理",
-						"description": "首次启动自动配置解码组件；看完在管理页一键停止、清理缓存。"
-					}
-				]
-			},
-			{
-				"type": "callout",
-				"tone": "warning",
-				"title": "使用须知",
-				"content": "播放器为第三方非官方客户端（免费学习交流用途），与本插件及 Youth 无关联。程序未购买代码签名证书，部分杀毒软件可能误报，请将插件安装目录加入信任白名单；若提示无法连接本地播放服务，请在防火墙中放行。"
-			},
-			{
-				"type": "markdown",
-				"content": "播放器随插件包分发并支持其内置自动更新；本插件只负责启动、状态与数据管理集成。想让 Agent 直接操作播放器界面（登录、搜索、选剧），可在能力市场启用「computer-use」配合使用。"
-			},
-			{
-				"type": "markdown",
-				"content": "红果短剧播放器为第三方非官方客户端（仅供学习交流），与红果官方及 Youth 均无关联。数据保存在本机 %APPDATA%\\hgplayer，卸载插件不会删除播放器数据。"
 			}
-		],
-		"meta": [
-			{
-				"label": "版本",
-				"value": "0.1.0（播放器 v1.2.18）"
-			},
-			{
-				"label": "平台",
-				"value": "Windows 10 / 11（64 位）"
-			},
-			{
-				"label": "集成能力",
-				"value": "启动/停止 · 运行状态 · 缓存统计与清理 · 数据目录"
-			},
-			{
-				"label": "Agent 权限",
-				"value": "进程管理 · 打开目录 · 受管目录文件访问（宿主审计通道）"
-			},
-			{
-				"label": "数据位置",
-				"value": "%APPDATA%\\hgplayer（卸载插件不删数据）"
-			}
-		]
+		}
 	}
 }

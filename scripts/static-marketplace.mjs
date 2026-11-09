@@ -90,7 +90,7 @@ function copyPackage(from, to, presentationOnly) {
   const inspect = value => {
     if (!value || typeof value !== 'object') return;
     for (const [key, item] of Object.entries(value)) {
-      if (typeof item === 'string' && ['path', 'fallback', 'icon', 'src', 'brand_icon_url'].includes(key) && !/^(?:https?:|solar:)/.test(item)) {
+      if (typeof item === 'string' && ['path', 'fallback', 'icon', 'src', 'image', 'brand_icon_url'].includes(key) && !/^(?:https?:|solar:)/.test(item)) {
         const path = inside(from, item);
         if (!resources.has(item)) {
           resources.add(item);

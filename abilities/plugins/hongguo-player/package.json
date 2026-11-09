@@ -11,13 +11,15 @@
 		"validate": "vetta-plugin validate"
 	},
 	"devDependencies": {
+		"@aws-sdk/client-s3": "^3.1164.0",
+		"@aws-sdk/lib-storage": "^3.1164.0",
 		"@tailwindcss/vite": "^4.1.12",
+		"@testing-library/dom": "^10.4.2",
 		"@testing-library/react": "16.3.2",
 		"@types/node": "^22.10.5",
 		"@types/react": "^19.1.1",
 		"@types/react-dom": "^19.1.1",
-		"@vetta-org/capability-sdk": "file:C:/Users/22874/AppData/Local/Temp/vetta-org-capability-sdk-0.2.0.tgz",
-		"@vetta-org/plugin-sdk": "file:C:/Users/22874/AppData/Local/Temp/vetta-org-plugin-sdk-0.4.0.tgz",
+		"@vetta-org/plugin-sdk": "file:./vendor/vetta-org-plugin-sdk-0.4.0.tgz",
 		"@vetta-org/plugin-vite": "^0.2.4",
 		"adm-zip": "^0.5.18",
 		"jsdom": "26.1.0",
@@ -28,9 +30,10 @@
 		"vite": "^7.1.7",
 		"vitest": "^3.2.4"
 	},
-	"dependencies": {
-		"@aws-sdk/client-s3": "^3.1164.0",
-		"@aws-sdk/lib-storage": "^3.1164.0",
-		"@testing-library/dom": "^10.4.2"
+	"overrides": {
+		"@vetta-org/capability-sdk": "file:./vendor/vetta-org-capability-sdk-0.2.0.tgz",
+		"@vetta-org/plugin-vite": {
+			"@vetta-org/plugin-sdk": "$@vetta-org/plugin-sdk"
+		}
 	}
 }

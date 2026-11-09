@@ -115,6 +115,7 @@ if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.m
   publishMarketplace({ root, directory, verify: (dir, remote) => remote
     ? verifyMarketplacePublication(readJson(join(dir, 'site/.vetta/marketplace.json')), {
       token: process.env.GITHUB_TOKEN,
+      appRepository: settings.appRepository,
       candidateAppCommits: settings.candidateAppCommits,
     })
     : verifyCandidate(dir, tooling),
