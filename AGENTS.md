@@ -42,6 +42,8 @@
 插件项目的目录、职责拆分、Tailwind 接入和用户流程测试遵循
 [`docs/plugin-project-structure.md`](docs/plugin-project-structure.md)。文件名必须表达职责；不要使用 `ui.ts`、`ui.tsx`、`utils.ts` 或 `primitives.tsx` 作为多个职责的容器。所有 UI `.tsx` 生产文件放在 feature/shared 的 `components/` 下（根目录 `index.tsx` 仅作为插件装配入口），基础组件原则上一个文件只放一个组件；`tools/` 仅用于 `ctx.agent.registerTool()` 的 Agent 工具。
 
+插件面板的**颜色、图标、弹窗与 i18n** 遵循 [`docs/plugin-ui-style-guide.md`](docs/plugin-ui-style-guide.md)：宿主全局 CSS 只包含它自己用到的 Tailwind 类，插件用到的颜色类（`bg-red-600`、`text-[#fa…]` 等）在运行时可能根本不存在——破坏性操作的红底按钮必须用内联样式兜底，否则会变成白底白字而「消失」。
+
 ## 开发插件：工具与手册
 
 插件类能力的**开发单位是它自己的目录**（`abilities/plugins/<slug>/`），每个目录里有一份

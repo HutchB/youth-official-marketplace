@@ -1,0 +1,7 @@
+/* 插件自带工具类：宿主全局 CSS 只含它自己用到的类（bg-red-600/text-orange-600 等在其中缺失），
+   面板用到的颜色类必须由插件产物供给，否则按钮白底白字不可见。
+   不引入 preflight，避免 reset 污染宿主全局。 */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "../src/**/*.{ts,tsx}";
