@@ -894,7 +894,7 @@
       "slug": "hongguo-player",
       "name": "Hongguo Short Drama",
       "description": "Watch Hongguo short dramas in a Youth-managed vertical player: open it by chat, autoplay episodes, search and browse rankings, clean cache and manage local data.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",
@@ -950,9 +950,31 @@
             "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-hongguo-player/hongguo-player-0.1.0.vettapkg",
             "sha256": "b218ebcdd1e36c798b4e2b61defb736396692e38d4bdcab91a37f5661b5e4c7a"
           }
+        },
+        {
+          "version": "0.1.1",
+          "minAppVersion": "0.5.73",
+          "pluginApiVersion": "^2.11.0",
+          "permissions": [
+            "ui.slot.workspace-view",
+            "agent.skills.control",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "system.processes.manage",
+            "shell.openPath",
+            "fs.read",
+            "fs.write",
+            "fs.managed",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-hongguo-player/hongguo-player-0.1.1.vettapkg",
+            "sha256": "64e07bca1939db7feab39fb1520a43f6aeb6b6ce0dc83b2fafedf04b666ea53b"
+          }
         }
       ]
     }
   ],
-  "marketplaceVersion": "2026.11.09-1"
+  "marketplaceVersion": "2026.11.09-2"
 }
