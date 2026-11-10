@@ -80,7 +80,7 @@
 		},
 		{
 			"type": "markdown",
-			"content": "The Hongguo short-drama player is an unofficial third-party client for personal study use, with no affiliation to Hongguo or Youth. Player data lives in %APPDATA%\\hgplayer on this machine; uninstalling the ability does not delete it."
+			"content": "The Hongguo short-drama player is an unofficial third-party client for personal study use, with no affiliation to Hongguo or Youth. Player data stays on this machine — use \"Open data folder\" in the panel to reach it; uninstalling the ability does not delete it."
 		}
 	]
 }
