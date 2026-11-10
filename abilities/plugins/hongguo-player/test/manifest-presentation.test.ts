@@ -61,4 +61,11 @@ describe("manifest presentation i18n", () => {
 			}
 		}
 	});
+
+	it("user-facing copy never exposes Windows environment placeholders", () => {
+		// 面板与详情页曾把 %APPDATA%\hgplayer 当文案展示，用户读到的是占位符而非真实路径。
+		for (const file of ["ability.json", "detail.json", "detail.zh.json", "locales/en.json", "locales/zh.json"]) {
+			expect(readFileSync(new URL(file, root), "utf8"), file).not.toMatch(/%APPDATA%/);
+		}
+	});
 });

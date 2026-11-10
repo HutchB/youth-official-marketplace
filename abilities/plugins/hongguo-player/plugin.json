@@ -1,7 +1,7 @@
 {
 	"id": "hongguo-player",
 	"name": "%plugin.name%",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "%plugin.description%",
 	"defaultLocale": "zh",
 	"pluginApiVersion": "^2.11.0",
