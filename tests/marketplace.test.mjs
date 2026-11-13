@@ -754,6 +754,47 @@ test("REA refuses to repackage upstream and keeps the conversation as its only s
   }
 });
 
+// Hongguo Player needs plugin API 2.11 (`ctx.env`, `ctx.processes`), which has no
+// npm release yet; the fork cannot publish under the upstream @vetta-org scope, so
+// the tarballs stay in-repo. Pin them to the locked bytes so a silent swap fails CI.
+test("Hongguo Player pins its unpublished SDK tarballs to the locked bytes", () => {
+  const directory = resolve(root, bySlug.get("hongguo-player").source.path);
+  const manifest = readJson(packageFile(directory, "package.json"));
+  const lock = readJson(packageFile(directory, "package-lock.json"));
+  const vendored = [
+    {
+      name: "@vetta-org/plugin-sdk",
+      version: "0.4.0",
+      file: "vetta-org-plugin-sdk-0.4.0.tgz",
+      declaredAt: manifest.devDependencies["@vetta-org/plugin-sdk"],
+    },
+    {
+      name: "@vetta-org/capability-sdk",
+      version: "0.2.0",
+      file: "vetta-org-capability-sdk-0.2.0.tgz",
+      declaredAt: manifest.overrides["@vetta-org/capability-sdk"],
+    },
+  ];
+  for (const { name, version, file, declaredAt } of vendored) {
+    if (!String(declaredAt).startsWith("file:")) {
+      // Registry migration is done per package: the unused tarball must go too.
+      assert.match(declaredAt, /^\^\d+\.\d+\.\d+$/u, `${name} must be a registry range once published`);
+      assert.equal(existsSync(resolve(directory, "vendor", file)), false, `remove unused vendor/${file}`);
+      continue;
+    }
+    assert.equal(declaredAt, `file:./vendor/${file}`, name);
+    const locked = lock.packages[`node_modules/${name}`];
+    assert.equal(locked.version, version, name);
+    assert.equal(locked.resolved, `file:vendor/${file}`, name);
+    const digest = createHash("sha512").update(readFileSync(packageFile(directory, `vendor/${file}`))).digest("base64");
+    assert.equal(locked.integrity, `sha512-${digest}`, `${name} tarball changed without a lockfile update`);
+  }
+  if (String(manifest.devDependencies["@vetta-org/plugin-sdk"]).startsWith("file:")) {
+    // plugin-vite still peers on the SDK the plugin compiles against.
+    assert.equal(manifest.overrides["@vetta-org/plugin-vite"]["@vetta-org/plugin-sdk"], "$@vetta-org/plugin-sdk");
+  }
+});
+
 test("display content carries no Vetta brand remnants in any language", () => {
   const collectStrings = (value, out = []) => {
     if (typeof value === "string") out.push(value);
@@ -761,7 +802,20 @@ test("display content carries no Vetta brand remnants in any language", () => {
     else if (value && typeof value === "object") for (const item of Object.values(value)) collectStrings(item, out);
     return out;
   };
-  const displayFiles = new Set();
+  const documentationFiles = (directory) => {
+    const files = [];
+    for (const entry of readdirSync(directory, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        // Vendored packages and build output are third-party or generated artifacts.
+        if (["node_modules", "dist", "release", "vendor"].includes(entry.name)) continue;
+        files.push(...documentationFiles(resolve(directory, entry.name)));
+      } else if (entry.name.endsWith(".md")) {
+        files.push(resolve(directory, entry.name));
+      }
+    }
+    return files;
+  };
+  const displayFiles = new Set([resolve(root, ".vetta/marketplace.source.json")]);
   const addDetail = (directory) => {
     const descriptor = readJson(resolve(directory, "ability.json"));
     displayFiles.add(resolve(directory, "ability.json"));
@@ -769,6 +823,11 @@ test("display content carries no Vetta brand remnants in any language", () => {
     for (const locale of Object.values(descriptor.detail?.i18n ?? {})) {
       if (locale.path) displayFiles.add(resolve(directory, locale.path));
     }
+    // The installed manifest and the ability's own docs are user-facing too: a new
+    // upstream plugin must be rebranded before it ships, not only its detail pages.
+    const manifest = resolve(directory, "plugin.json");
+    if (existsSync(manifest)) displayFiles.add(manifest);
+    for (const file of documentationFiles(directory)) displayFiles.add(file);
   };
   for (const ability of catalog.abilities) {
     const directory = resolve(root, ability.source.path);

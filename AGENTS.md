@@ -29,6 +29,12 @@
 - 开发联调优先使用 `vetta-plugin-cli watch` / `reload`；需要安装包测试时可在开发实例重新安装同一待发布版本的本地包。不得通过递增版本绕过缓存或重载问题；市场上已发布的同版本制品仍不可覆盖。
 - 上游运行时版本、依赖锁定版本和 `configVersion` 按实际依赖或配置合同变化维护，不与能力版本逐次联动递增。依赖更新脚本应保留已有待发布版本，不得每执行一次就提升能力版本。
 
+### 合并上游市场
+
+上游为 `openvetta/vetta-official-marketplace`。合并后按 [上游合并清单](docs/upstream-merge.md) 完成
+品牌、版本与 SDK 适配；品牌测试会扫描索引、`ability.json`、详情页、locales、`plugin.json` 与能力文档，
+拦截 Vetta 残留。
+
 ## 添加一个能力的流程
 
 1. 选类型：`skill` / `mcp` / `plugin` / `bundle`（没有别的类型，`scene` 不被支持）
@@ -62,6 +68,8 @@ SDK 手册随 `@vetta-org/plugin-sdk` 装进各插件自己的 `node_modules`，
 > 10 个插件统一钉 `@vetta-org/plugin-sdk@^0.3.11`、`@vetta-org/plugin-cli@^0.1.7`、
 > `@vetta-org/plugin-vite@^0.2.4`，手册随包装好，`docs` 可直接用。升级 SDK 后用
 > `npx vetta-plugin-cli docs --check-latest` 核对手册是否落后；落后就按它打印的命令升级再重读。
+> `hongguo-player` 的 0.4.0 提供 plugin API 2.11 类型，npm 尚未发布；二开仓库不拥有
+> `@vetta-org` scope，迁移条件与步骤见该插件的 `vendor/README.md`。
 
 新建插件工程（仓库根没有 `node_modules`，用全名）：
 
