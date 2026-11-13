@@ -24,6 +24,9 @@ git merge vetta-marketplace/main
 - `README.md`、`AGENTS.md` 与插件内 `agent/**/*.md`
 - 源码里直接写死的用户可见文案（如默认搜索词、空状态文案）
 
+如果上游能力的 `slug` / `id` 本身含 `vetta`（如 `vetta-memory`），展示名、侧边栏 label 与页面标题
+必须带 Youth 品牌（`Youth Memory` / `Youth 记忆`），不能让用户看到 `vetta`；`slug` 与包名仍保持不变。
+
 保持不动的技术标识：`slug`、包名 `@vetta-marketplace/*`、仓库/文档 URL、环境变量、
 `install:vetta` 脚本名、User-Agent 等协议标识。
 

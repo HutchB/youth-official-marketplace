@@ -847,9 +847,9 @@
     {
       "type": "plugin",
       "slug": "vetta-memory",
-      "name": "Memory",
+      "name": "Youth Memory",
       "description": "Long-term memory for the AI: preferences, facts and decisions that persist across conversations, plus a daily log and a follow-up checklist, all managed on one page.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",
@@ -868,7 +868,7 @@
       "detail": {
         "i18n": {
           "zh": {
-            "name": "记忆",
+            "name": "Youth 记忆",
             "description": "让 AI 拥有跨对话的长期记忆：偏好、事实与决定会被记住，另有每日日志与待办清单，统一在一个页面管理。",
             "tags": [
               "记忆",
