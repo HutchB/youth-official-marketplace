@@ -1018,7 +1018,196 @@
           }
         }
       ]
+    },
+    {
+      "type": "plugin",
+      "slug": "ego",
+      "name": "Youth Ego",
+      "description": "Let the agent use the ego browser — your own logged-in sites included — and make it the default for browser work and web app testing.",
+      "version": "0.1.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Browser",
+      "categoryI18n": {
+        "zh": "浏览器",
+        "en": "Browser"
+      },
+      "tags": [
+        "browser",
+        "automation",
+        "testing",
+        "qa",
+        "ego"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Youth Ego",
+            "description": "让智能体使用 ego 浏览器（包括你已登录的网站），并让它成为浏览器操作与 Web 应用测试的默认选择。",
+            "tags": [
+              "浏览器",
+              "自动化",
+              "测试",
+              "QA",
+              "ego"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/ego"
+      },
+      "releases": [
+        {
+          "version": "0.1.0",
+          "minAppVersion": "0.5.60",
+          "pluginApiVersion": "^2.4.0",
+          "permissions": [
+            "agent.skills.control",
+            "agent.systemPrompt.write"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-ego/ego-0.1.0.vettapkg",
+            "sha256": "d358784d4277a1ba90f93d19330c56111c829c262abe788577100294e40fe544"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "web-access",
+      "name": "Web Access",
+      "description": "Search the web and read pages or PDFs inside a conversation — free by default, or with your own search and reader keys.",
+      "version": "1.0.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Research",
+      "categoryI18n": {
+        "zh": "研究",
+        "en": "Research"
+      },
+      "tags": [
+        "web-search",
+        "search",
+        "fetch",
+        "research",
+        "exa",
+        "brave",
+        "tavily",
+        "searxng"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "网页访问",
+            "description": "在对话里搜索网页、读取页面与 PDF——默认免密钥可用，也可以填自己的搜索与阅读服务密钥。",
+            "tags": [
+              "网页搜索",
+              "搜索",
+              "抓取",
+              "研究",
+              "Exa",
+              "Brave",
+              "Tavily",
+              "SearXNG"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/web-access"
+      },
+      "releases": [
+        {
+          "version": "1.0.0",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.4.0",
+          "permissions": [
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "ui.slot.workspace-view",
+            "ui.slot.ability-detail",
+            "storage.read",
+            "storage.write",
+            "secrets.read",
+            "secrets.write",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-web-access/web-access-1.0.0.vettapkg",
+            "sha256": "db12625a68e872d8048cd0eb01b259c11c65ecbd5e3a5d95e882b6c4c3431e8b"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "vetta-memory",
+      "name": "Memory",
+      "description": "Long-term memory for the AI: preferences, facts and decisions that persist across conversations, plus a daily log and a follow-up checklist, all managed on one page.",
+      "version": "0.1.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "memory",
+        "long-term memory",
+        "context",
+        "notes",
+        "todo"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "记忆",
+            "description": "让 AI 拥有跨对话的长期记忆：偏好、事实与决定会被记住，另有每日日志与待办清单，统一在一个页面管理。",
+            "tags": [
+              "记忆",
+              "长期记忆",
+              "上下文",
+              "笔记",
+              "待办"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/vetta-memory"
+      },
+      "releases": [
+        {
+          "version": "0.1.0",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.workspace-view",
+            "storage.read",
+            "storage.write",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "agent.systemPrompt.write",
+            "agent.hooks.register",
+            "agent.hookHandler.execute",
+            "ai.complete",
+            "ai.models.list"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-vetta-memory/vetta-memory-0.1.0.vettapkg",
+            "sha256": "0a11410eba07f076ee238d1336ea4c0ea9add6e87d5807cbb77c97b2d56cdea1"
+          }
+        }
+      ]
     }
   ],
-  "marketplaceVersion": "2026.11.10-1"
+  "marketplaceVersion": "2026.11.13-1"
 }
