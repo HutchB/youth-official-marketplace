@@ -56,4 +56,5 @@ node --test tests/*.test.mjs
 `--output`。Windows 本地若因 `core.autocrlf=true` 触发 `SKILL.md` 的 LF 断言，
 按该测试的期望临时转 LF 验证即可，CI 使用 Linux 不受影响。
 
-推送 `main` 后 `Publish ability marketplace` 会自动发布新能力并推进 `gh-pages`。
+推送 `main` 后 `Publish ability marketplace` 会自动发布新能力并推进 GitHub 的 `gh-pages`；
+Gitee 镜像不会自动更新，按 [Gitee 镜像手动同步](gitee-mirror-sync.md) 单独同步 `main` 与 `gh-pages`。

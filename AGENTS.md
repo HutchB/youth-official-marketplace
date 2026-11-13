@@ -19,6 +19,8 @@
 - 完成时依次运行 node scripts/marketplace.mjs check、node scripts/marketplace.mjs build 与 node --test tests/*.test.mjs；内容测试同时检查生成后的插件资源，不能放在构建前。Windows Python shim 环境可将 VETTA_PYTHON 指向真实解释器。
 - 本地构建使用 node scripts/marketplace.mjs build；正式发布由 publish-marketplace.yml 执行。
 - Desktop 使用分支 `gh-pages`。生成索引只写在 `gh-pages`。
+- GitHub Actions 只发布 GitHub 的 `gh-pages`，不同步 Gitee；每次发布后按
+  [Gitee 镜像手动同步](docs/gitee-mirror-sync.md) 更新 Gitee 的 `main` 与 `gh-pages`。
 
 ### 开发版本与市场发布版本
 
