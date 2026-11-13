@@ -1,6 +1,6 @@
-# Memory（记忆）
+# Youth Memory（Youth 记忆）
 
-Youth 的长期记忆插件。把偏好、事实、决定和项目约定保存在本机，并在每轮对话开始时提供给 Agent；另有每日日志、待办清单，以及独立的「记忆」页面用于管理。设计参考 [pi-memory](https://www.npmjs.com/package/pi-memory)。
+Youth 的长期记忆插件。把偏好、事实、决定和项目约定保存在本机，并在每轮对话开始时提供给 Agent；另有每日日志、待办清单，以及独立的「Youth 记忆」页面用于管理。设计参考 [pi-memory](https://www.npmjs.com/package/pi-memory)。
 
 ## 能力边界
 
