@@ -1080,7 +1080,7 @@
       "slug": "web-access",
       "name": "Web Access",
       "description": "Search the web and read pages or PDFs inside a conversation — free by default, or with your own search and reader keys.",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",
@@ -1141,6 +1141,27 @@
             "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-web-access/web-access-1.0.0.vettapkg",
             "sha256": "db12625a68e872d8048cd0eb01b259c11c65ecbd5e3a5d95e882b6c4c3431e8b"
           }
+        },
+        {
+          "version": "1.0.2",
+          "minAppVersion": "0.6.13",
+          "pluginApiVersion": "^2.4.0",
+          "permissions": [
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "ui.slot.workspace-view",
+            "ui.slot.ability-detail",
+            "storage.read",
+            "storage.write",
+            "secrets.read",
+            "secrets.write",
+            "network.fetch"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-web-access/web-access-1.0.2.vettapkg",
+            "sha256": "4d913691f52916f58e9e712290ff653de7333ca814bf8fdc00e1edb91d041a51"
+          }
         }
       ]
     },
@@ -1149,7 +1170,7 @@
       "slug": "vetta-memory",
       "name": "Youth Memory",
       "description": "Long-term memory for the AI: preferences, facts and decisions that persist across conversations, plus a daily log and a follow-up checklist, all managed on one page.",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "configVersion": 1,
       "license": "MIT",
       "author": "Youth",
@@ -1227,9 +1248,91 @@
             "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-vetta-memory/vetta-memory-0.1.1.vettapkg",
             "sha256": "f4a23e900a8bbeca69574598ebb900bad434f44d4495b4d33fca327f96e9292c"
           }
+        },
+        {
+          "version": "0.1.2",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.workspace-view",
+            "storage.read",
+            "storage.write",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "agent.systemPrompt.write",
+            "agent.hooks.register",
+            "agent.hookHandler.execute",
+            "ai.complete"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-vetta-memory/vetta-memory-0.1.2.vettapkg",
+            "sha256": "41d80841b58282f52a383e13a36d625603edd440d8ad89e05c3472688deed025"
+          }
+        }
+      ]
+    },
+    {
+      "type": "plugin",
+      "slug": "vetta-generative-ui",
+      "name": "Youth Generative UI",
+      "description": "Lets the AI answer with interactive views: forms, quick replies, KPI cards, tables, Chart.js charts and layouts that match the app, plus custom HTML in a secure sandbox.",
+      "version": "0.1.1",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "generative ui",
+        "forms",
+        "charts",
+        "dashboard",
+        "html"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Youth 生成式UI",
+            "description": "让 AI 用可交互的界面回答：表单、快捷回复、指标卡、表格、Chart.js 图表与布局，风格与应用一致；也能在安全沙箱中运行自定义 HTML。",
+            "tags": [
+              "生成式UI",
+              "表单",
+              "图表",
+              "看板",
+              "HTML"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/vetta-generative-ui"
+      },
+      "releases": [
+        {
+          "version": "0.1.1",
+          "minAppVersion": "0.5.59",
+          "pluginApiVersion": "^2.0.0",
+          "permissions": [
+            "ui.slot.tool-call",
+            "agent.tools.register",
+            "agent.toolHandler.execute",
+            "agent.systemPrompt.write",
+            "agent.session.write",
+            "storage.read",
+            "storage.write"
+          ],
+          "commands": [],
+          "artifact": {
+            "url": "https://github.com/HutchB/youth-official-marketplace/releases/download/plugin-vetta-generative-ui/vetta-generative-ui-0.1.1.vettapkg",
+            "sha256": "47a222211d184f6a2a18d6918001de3592638074dc6e0f6d8427b1a91d2b96ae"
+          }
         }
       ]
     }
   ],
-  "marketplaceVersion": "2026.11.13-2"
+  "marketplaceVersion": "2026.11.24-1"
 }
