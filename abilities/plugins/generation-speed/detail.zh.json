@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrow": "Youth 回复增强 HUD",
+      "title": "每一条回复下面，写得多快、看过哪些资料，一眼看清",
+      "description": "最新一轮回复下方只有一行：实时生成速度（tok/s）和这条回答用到的来源。点网站图标直接在浏览器打开，点开详情可看首字延迟、速度走势、token 用量和整份可复制的来源清单。",
+      "badges": [
+        "实时 tok/s",
+        "网站图标",
+        "来源可复制",
+        "只读数字"
+      ]
+    },
+    {
+      "type": "showcase",
+      "showcase": {
+        "template": "chat-over-canvas",
+        "canvas": "generic",
+        "user_prompt": "CSS 容器查询现在能上生产了吗？",
+        "assistant_reply": "可以。Chrome 105+、Firefox 110+、Safari 16+ 都已支持，2025 年 8 月起被列为广泛可用。\n\n⏱ 118 tok/s · 首字 0.8 s · 输出 1,240 token · 3 次模型调用\n🔗 caniuse.com · developer.mozilla.org · web.dev  全部 4 个来源"
+      }
+    },
+    {
+      "type": "feature-grid",
+      "title": "速度：正在生成时就看得见",
+      "items": [
+        {
+          "icon": "solar:speedometer-max-linear",
+          "title": "输出时实时跳动",
+          "description": "显示最近 2 秒的速度，以及模型此刻在做什么：思考、写回复、写工具参数，还是在执行工具。"
+        },
+        {
+          "icon": "solar:flag-linear",
+          "title": "结束后自动结算",
+          "description": "本轮结束后换成整轮平均速度，token 数换成模型服务商报回的真实值。"
+        },
+        {
+          "icon": "solar:chart-2-linear",
+          "title": "一点就看全",
+          "description": "固定尺寸的左右布局详情：实时走势、首字延迟、本次与本轮平均、生成耗时，以及上一次调用的 token 构成。"
+        },
+        {
+          "icon": "solar:shield-check-linear",
+          "title": "只看数字，不看内容",
+          "description": "Youth 只把速度和用量交给插件，你的对话内容它拿不到。"
+        }
+      ]
+    },
+    {
+      "type": "feature-grid",
+      "title": "来源：需要时才展开",
+      "items": [
+        {
+          "icon": "solar:link-round-linear",
+          "title": "三个以内逐个列出",
+          "description": "来源少时显示每个网站自己的图标和域名；超过三个就收成叠放的图标，写成「caniuse.com 等 4 个来源」。"
+        },
+        {
+          "icon": "solar:square-arrow-right-up-linear",
+          "title": "点开就在外部浏览器",
+          "description": "点网站图标，用系统默认浏览器打开那个页面，不挤在侧边栏里。"
+        },
+        {
+          "icon": "solar:copy-linear",
+          "title": "复制为 Markdown",
+          "description": "详情里每条来源都带标题，并标明是回复引用还是工具打开过，可一键复制成编号列表。"
+        },
+        {
+          "icon": "solar:shield-keyhole-linear",
+          "title": "图标由本机取回",
+          "description": "网站图标经 Youth 代为请求，不经过任何第三方图标服务。"
+        }
+      ]
+    },
+    {
+      "type": "feature-grid",
+      "title": "这些数字怎么算",
+      "items": [
+        {
+          "icon": "solar:bolt-linear",
+          "title": "实时速度",
+          "description": "最近 2 秒的输出 token。模型停顿时会降向 0，一眼分清是卡住了还是本来就慢。"
+        },
+        {
+          "icon": "solar:calculator-minimalistic-linear",
+          "title": "本轮平均",
+          "description": "输出 token ÷ 实际生成时间，不算工具执行和等待首字的时间。"
+        },
+        {
+          "icon": "solar:stopwatch-linear",
+          "title": "首字延迟",
+          "description": "从发出请求到收到第一个思考、正文或工具参数 token 的时间。"
+        },
+        {
+          "icon": "solar:tag-price-linear",
+          "title": "≈ 估算值",
+          "description": "生成中按已收到的文字估算 token，每次调用结束后换成真实值。"
+        }
+      ]
+    },
+    {
+      "type": "steps",
+      "title": "三步开始",
+      "items": [
+        {
+          "title": "安装「回复增强 HUD」",
+          "description": "需要 Youth 0.6.15 或更新版本，无需任何配置。"
+        },
+        {
+          "title": "照常对话",
+          "description": "普通会话和项目会话里，最新一轮回复下方会出现这一行。"
+        },
+        {
+          "title": "点你需要的那部分",
+          "description": "点网站图标直接打开网页；点「全部来源」看完整清单并复制。"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "title": "使用须知",
+      "content": "团队会话暂不提供速度数据，速度行不会出现。速度走势只记录会话打开期间的当前这一轮，来源清单每轮重新统计。"
+    },
+    {
+      "type": "links",
+      "title": "了解更多",
+      "items": [
+        {
+          "label": "指标口径说明",
+          "href": "https://github.com/openvetta/vetta-official-marketplace/blob/main/abilities/plugins/generation-speed/README.md"
+        }
+      ]
+    }
+  ]
+}

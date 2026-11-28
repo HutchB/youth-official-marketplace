@@ -925,6 +925,50 @@
         "path": "abilities/plugins/vetta-generative-ui"
       },
       "minAppVersion": "0.5.59"
+    },
+    {
+      "type": "plugin",
+      "slug": "generation-speed",
+      "name": "Youth Reply HUD",
+      "description": "A heads-up line under the latest reply: live generation speed (tok/s) and the sources used this turn, with first-token latency, a speed trend, token usage and a copyable source list one click away.",
+      "version": "0.2.0",
+      "configVersion": 1,
+      "license": "MIT",
+      "author": "Youth",
+      "category": "Productivity",
+      "categoryI18n": {
+        "zh": "效率",
+        "en": "Productivity"
+      },
+      "tags": [
+        "hud",
+        "speed",
+        "tokens per second",
+        "sources",
+        "citations",
+        "latency",
+        "usage"
+      ],
+      "detail": {
+        "i18n": {
+          "zh": {
+            "name": "Youth 回复增强 HUD",
+            "description": "最新一轮回复下方的信息条：实时生成速度（tok/s）与本轮来源，点开可看首字延迟、速度走势、token 用量和可复制的来源清单。",
+            "tags": [
+              "HUD",
+              "生成速度",
+              "来源",
+              "引用",
+              "首字延迟",
+              "用量"
+            ]
+          }
+        }
+      },
+      "source": {
+        "path": "abilities/plugins/generation-speed"
+      },
+      "minAppVersion": "0.6.15"
     }
   ]
 }
